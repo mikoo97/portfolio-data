@@ -10,15 +10,6 @@
       "type": "solo"
     },
     {
-      "id": 1778864246289,
-      "title": "Indonesia Mobility Flow Explorer",
-      "desc": "Analisis pola migrasi struktural & mobilitas harian Indonesia 1980–2024. Menggabungkan data BPS SP2020, SUSENAS, dan Meta Movement Range Maps untuk mengungkap korelasi antara migrasi dan dampak COVID-19 pada 34 provinsi dan 482 kabupaten/kota. Built with Python, GeoPandas, Plotly, dan Streamlit.",
-      "year": "2026",
-      "link": "https://human-mobility-id-lz7bft3crc7rkqdyv9dnny.streamlit.app/",
-      "icon": "📌",
-      "type": "solo"
-    },
-    {
       "id": 1778805683129,
       "title": "Spatial Base System Indonesia",
       "desc": "Pipeline geodata dan interactive map explorer untuk analisis spasial-ekonomi Indonesia. Membangun layer administrasi 34 provinsi, 502 kabupaten, 6.695 kecamatan dengan 0 invalid geometry. Fondasi ekosistem Spatial Economic Intelligence Indonesia.",
