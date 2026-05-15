@@ -1,6 +1,15 @@
 {
   "projects_solo": [
     {
+      "id": 1778805683129,
+      "title": "Spatial Base System Indonesia",
+      "desc": "Pipeline geodata dan interactive map explorer untuk analisis spasial-ekonomi Indonesia. Membangun layer administrasi 34 provinsi, 502 kabupaten, 6.695 kecamatan dengan 0 invalid geometry. Fondasi ekosistem Spatial Economic Intelligence Indonesia.",
+      "year": "2026",
+      "link": "https://spatial-base-system-djchhbqwfuuaxisszefkwp.streamlit.app",
+      "icon": "📌",
+      "type": "solo"
+    },
+    {
       "id": 1778771710319,
       "title": "Spatial Base System Indonesia",
       "desc": "Pipeline geodata dan interactive map explorer untuk analisis spasial-ekonomi Indonesia. Membangun layer administrasi 34 provinsi, 502 kabupaten, 6.695 kecamatan dengan 0 invalid geometry. Bagian dari ekosistem Spatial Economic Intelligence Indonesia.",
