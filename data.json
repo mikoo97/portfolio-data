@@ -35,15 +35,6 @@
       "link": "",
       "icon": "⚠️",
       "type": "solo"
-    },
-    {
-      "id": 1786368120444,
-      "title": "Silsilah Keluarga",
-      "desc": "Aplikasi pohon keluarga berbasis peramban: menyusun silsilah lintas generasi, merender diagram SVG interaktif, dan menyimpan seluruh data di sisi pengguna tanpa server maupun basis data. Built with HTML, JavaScript, SVG.",
-      "year": "2026",
-      "link": "https://github.com/mikoo97/silsilah-keluarga",
-      "icon": "🌳",
-      "type": "solo"
     }
   ],
   "projects_collab": [],
