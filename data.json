@@ -1,12 +1,12 @@
 {
   "projects_solo": [
     {
-      "id": 1778887540382,
-      "title": "Indonesia Mobility Flow Explorer",
-      "desc": "Analisis pola migrasi struktural & mobilitas harian Indonesia 1980–2024. Data BPS SP2020, SUSENAS, Meta Movement Range Maps. 34 provinsi · 482 kabupaten/kota. Built with Python, GeoPandas, Plotly, Streamlit.",
+      "id": 1786368120441,
+      "title": "Sistem Data Spasial Dusun Krajan",
+      "desc": "Basis data spasial 13 RT di Dusun Krajan, Lumajang — dari perbaikan topologi (overlap 3.443 m² dan celah 478 m² menjadi nol), ekstraksi elevasi dan kemiringan DEMNAS, perhitungan jarak ke layanan dasar, hingga peta relief 3D dan situs profil dusun. Dilengkapi kamus data, register variabel, dan protokol etika data mengacu UU PDP 27/2022. Built with QGIS, GDAL/OGR, SpatiaLite, Python, three.js.",
       "year": "2026",
-      "link": "https://human-mobility-id-wqd9a3jeyrurphjwfkgnue.streamlit.app/",
-      "icon": "📌",
+      "link": "",
+      "icon": "🗺️",
       "type": "solo"
     },
     {
@@ -15,7 +15,43 @@
       "desc": "Pipeline geodata dan interactive map explorer untuk analisis spasial-ekonomi Indonesia. Membangun layer administrasi 34 provinsi, 502 kabupaten, 6.695 kecamatan dengan 0 invalid geometry. Fondasi ekosistem Spatial Economic Intelligence Indonesia.",
       "year": "2026",
       "link": "https://spatial-base-system-djchhbqwfuuaxisszefkwp.streamlit.app",
-      "icon": "📌",
+      "icon": "🌐",
+      "type": "solo"
+    },
+    {
+      "id": 1778887540382,
+      "title": "Indonesia Mobility Flow Explorer",
+      "desc": "Analisis pola migrasi struktural & mobilitas harian Indonesia 1980–2024. Data BPS SP2020, SUSENAS, Meta Movement Range Maps. 34 provinsi · 482 kabupaten/kota. Built with Python, GeoPandas, Plotly, Streamlit.",
+      "year": "2026",
+      "link": "https://human-mobility-id-wqd9a3jeyrurphjwfkgnue.streamlit.app/",
+      "icon": "🚶",
+      "type": "solo"
+    },
+    {
+      "id": 1786368120442,
+      "title": "Sistem Peringatan Dini Tempursari",
+      "desc": "Peringatan dini gempa, tsunami, dan erupsi Semeru untuk Kecamatan Tempursari, Lumajang. Menggabungkan tiga feed BMKG TEWS dengan data MAGMA/PVMBG, menyaring kejadian dalam radius 100 km, lalu mengirim notifikasi ke Telegram. Berjalan 24/7 setiap 5 menit dengan dedup state dan toleransi keterlambatan jadwal. Built with Python tanpa dependensi eksternal, dijalankan di GitHub Actions.",
+      "year": "2026",
+      "link": "",
+      "icon": "⚠️",
+      "type": "solo"
+    },
+    {
+      "id": 1786368120443,
+      "title": "Detektif Konten",
+      "desc": "Game edukasi literasi digital untuk anak sekolah dasar. Pemain menilai skenario konten sehari-hari sebagai aman atau berisiko dan langsung menerima umpan balik, dilengkapi mode tanya-jawab bersama karakter detektif dan panel pengelola skenario. Built with React, TypeScript, Vite.",
+      "year": "2026",
+      "link": "",
+      "icon": "🕵️",
+      "type": "solo"
+    },
+    {
+      "id": 1786368120444,
+      "title": "Silsilah Keluarga",
+      "desc": "Aplikasi pohon keluarga berbasis peramban: menyusun silsilah lintas generasi, merender diagram SVG interaktif, dan menyimpan seluruh data di sisi pengguna tanpa server maupun basis data. Built with HTML, JavaScript, SVG.",
+      "year": "2026",
+      "link": "https://github.com/mikoo97/silsilah-keluarga",
+      "icon": "🌳",
       "type": "solo"
     }
   ],
