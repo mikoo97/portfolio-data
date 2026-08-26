@@ -1,42 +1,42 @@
-# Caption final — konten #1
+# Caption final, konten #1
 
 Tayang Rabu 26 Agustus 2026, 19.30 WIB. Carousel 6 slide.
 
 ---
 
-Aksinya baru besok. Percakapannya sudah lebih dulu berjalan.
+Aksinya baru besok. Perhatian publiknya baru menyala 48 jam terakhir.
 
-Aku tarik data pencarian Google se-Indonesia untuk empat kata kunci, 26 Juli–26 Agustus 2026. Tiga hal yang aku temukan:
+Google Trends Indonesia, 26 Juli sampai 26 Agustus 2026, empat kata kunci sekaligus:
 
-1. Sampai 15 Agustus, indeks pencarian "demo 27 agustus" nol. Praktis tidak ada yang mencarinya. Lonjakan terbesarnya baru terjadi 24 Agustus — naik 4,8 kali lipat dalam satu hari.
+"demo 27 agustus": nol sampai 15 Agustus. Lalu 1 (21 Agu), 5 (23 Agu), 24 (24 Agu), 100 hari ini.
+"RUU perampasan aset": puncaknya 5.
+"hukuman mati koruptor": tidak pernah lewat <1 selama 32 hari.
+"MBG": datar di sekitar 28 sepanjang bulan.
 
-2. Yang dicari peristiwanya, bukan tuntutannya. Hari ini pencarian "demo 27 agustus" 20 kali lipat "RUU Perampasan Aset" — padahal itu tuntutan utama aksinya sendiri. Dan "hukuman mati koruptor" tidak pernah beranjak dari <1 selama 32 hari.
+Tiga bacaan:
 
-3. Jakarta pusatnya di indeks 100, lalu Banten 37 dan Jawa Barat 22. Tapi Yogyakarta ada di 18 — di atas Jawa Tengah dan Jawa Timur yang sama-sama 14, padahal penduduknya jauh lebih sedikit.
+1. Aksi mendahului perhatian. Warga Pati sudah di depan DPR sejak sekitar 21 Agustus. Saat itu indeksnya masih 1. Lonjakan terbesar baru datang 24 Agustus, naik 4,8 kali lipat dalam sehari. Tiga hari menduduki ruang publik tidak otomatis jadi perhatian nasional. Ada sesuatu di antara 23 dan 24 Agustus yang mengubahnya, dan aku belum tahu apa.
 
-Cara membacanya: ini peta pencarian, bukan jajak pendapat.
+2. Keramaiannya naik, tuntutannya tidak. Pencarian aksinya 20 kali lipat pencarian RUU Perampasan Aset. DPR kembali menjanjikan percepatan pembahasan RUU itu menjelang aksi. Janji itu murah kalau perhatian publik memang menempel pada peristiwanya, bukan pada undang-undangnya. Perhatian pada peristiwa punya tanggal kedaluwarsa.
 
-Yang tidak bisa disimpulkan dari data ini: berapa banyak orang mendukung atau menolak aksi. Indeks Trends adalah angka relatif 0–100 terhadap puncaknya sendiri, bukan jumlah orang. Dan rendahnya pencarian "RUU Perampasan Aset" bukan bukti rendahnya kepedulian — orang yang sudah paham tidak perlu mencarinya. Yang bisa disimpulkan cuma satu: perhatian yang baru muncul ini tertuju ke peristiwanya.
+3. Yang paling nyaring justru paling sepi dicari. "Hukuman mati koruptor" bertahan di <1 selama 32 hari penuh. Sementara "MBG", isu perut, stabil di 28 tanpa perlu ada demo.
 
-Angka 26 Agustus masih berjalan saat data diambil pukul 17.00 WIB, jadi ditandai terpisah di grafik dan tidak digambar sebagai titik penuh.
+Petanya: Jakarta 100, Banten 37. Sebagian besar pencarinya kemungkinan orang yang besok kena macet. Tapi Yogyakarta 18, di atas Jawa Tengah dan Jawa Timur yang sama-sama 14, padahal indeks provinsi sudah memperhitungkan jumlah penduduk. Jawa Tengah, asal massa Pati, tidak masuk lima besar.
 
-Sumber: Google Trends Indonesia, diakses 26 Agustus 2026 pukul 17.00 WIB. Konteks aksi dihimpun dari pemberitaan Kompas, Kontan, dan Bisnis, 21–25 Agustus 2026.
+Yang tidak bisa disimpulkan dari data ini: berapa orang mendukung atau menolak aksi. Indeks Trends itu angka relatif, bukan jumlah orang. Rendahnya pencarian juga bukan bukti rendahnya kepedulian.
 
-Besok kita lihat lagi angkanya setelah aksinya berlangsung.
+Sumber: Google Trends Indonesia, diakses 26 Agustus 2026, 17.00 WIB, angka hari ini masih berjalan. Konteks aksi dari Kompas, Kontan, dan Bisnis, 21 sampai 25 Agustus 2026.
 
-Buat kamu: sebelum ramai ini, kamu sudah tahu isi RUU Perampasan Aset?
+Jumat aku unggah versi setelah aksi. Kalau kurvanya turun secepat naiknya, itu sudah jadi jawaban tersendiri.
 
-#ceritadataa #visualisasidata #datajurnalisme #dataindonesia #googletrends #27Agustus #RUUPerampasanAset #infografis #literasidata #analisisdata
+Menurutmu, apa yang terjadi pada 24 Agustus?
+
+#ceritadataa #visualisasidata #datajurnalisme #dataindonesia #27Agustus #RUUPerampasanAset #literasidata
 
 ---
 
 ## Catatan produksi
 
 Ruang lingkup dipotong dari 8 slide jadi 6 karena korpus komentar (YouTube, Reddit,
-GDELT) belum sempat ditarik. Slide yang gugur: perbandingan antarkanal dan komposisi
-nada percakapan. Keduanya butuh korpus yang belum ada, dan memaksakannya dalam dua jam
-adalah cara tercepat menayangkan angka yang salah.
-
-Enam slide ini berdiri sepenuhnya di atas data Google Trends yang sudah di tangan dan
-sudah diverifikasi — tidak ada satu angka pun yang tidak bisa ditelusuri ke
-`data-mentah/trends_harian.csv` atau `data-mentah/trends_provinsi.csv`.
+GDELT) belum sempat ditarik. Setiap angka bisa ditelusuri ke `data-mentah/trends_harian.csv`
+atau `data-mentah/trends_provinsi.csv`.

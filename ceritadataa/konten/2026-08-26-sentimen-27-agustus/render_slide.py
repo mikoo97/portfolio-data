@@ -139,7 +139,7 @@ def slide1(seri):
     fig.text(KIRI, 0.545, f"{rasio:.0f}×", color=AKSEN, fontsize=155, weight=800, va="top")
     fig.text(KIRI, 0.335,
              "Sebanyak itu pencarian “demo 27 Agustus”\n"
-             "dibanding “RUU Perampasan Aset” hari ini —\n"
+             "dibanding “RUU Perampasan Aset” hari ini,\n"
              "padahal itu tuntutan utama aksinya sendiri.",
              color=TINTA, fontsize=20, va="top", linespacing=1.6)
     fig.text(KIRI, 0.185, "Jadi sebenarnya, yang ramai itu apa?",
@@ -188,10 +188,10 @@ def slide3(tgl, seri):
     ax.scatter([x[-1]], [y[-1]], s=90, facecolor=LATAR, edgecolor=AKSEN, lw=2.6, zorder=4)
 
     for i, lbl, dy, ha in [(x[tgl.index("2026-08-21")], "21 Agu\nindeks 1", 9, "center"),
-                           (x[tgl.index("2026-08-24")], "24 Agu — naik 4,8×\ndalam satu hari", 14, "right")]:
+                           (x[tgl.index("2026-08-24")], "24 Agu: naik 4,8×\ndalam satu hari", 14, "right")]:
         ax.annotate(lbl, (i, y[i]), textcoords="offset points", xytext=(0 if ha == "center" else -12, dy),
                     ha=ha, va="bottom", fontsize=13, color=TINTA, linespacing=1.4)
-    ax.annotate("26 Agu — hari berjalan,\ndata belum lengkap", (x[-1], y[-1]),
+    ax.annotate("26 Agu: hari berjalan,\ndata belum lengkap", (x[-1], y[-1]),
                 textcoords="offset points", xytext=(-14, -6), ha="right", va="top",
                 fontsize=13, color=ABU, linespacing=1.4)
 
@@ -208,7 +208,7 @@ def slide3(tgl, seri):
     ax.tick_params(colors=ABU, labelsize=13, length=0, pad=9)
     ax.grid(axis="y", color=GARIS, lw=1)
     ax.set_axisbelow(True)
-    fig.text(KIRI, 0.79, "Indeks pencarian “demo 27 agustus” di Indonesia — 100 = titik tertinggi",
+    fig.text(KIRI, 0.79, "Indeks pencarian “demo 27 agustus” di Indonesia. 100 = titik tertinggi",
              color=ABU, fontsize=13.5)
     fig.text(KIRI, 0.192,
              "Sampai 15 Agustus indeksnya nol. Rencana aksi ini praktis\n"
@@ -262,7 +262,7 @@ def slide5(prov):
     geo = json.loads((MENTAH / "indonesia-prov.geojson").read_text(encoding="utf-8"))
     nilai = {samakan(k): v for k, v in prov.items()}
     fig = kanvas()
-    kop(fig, "Jakarta pusatnya — tapi\nYogyakarta ikut menyala", "Di mana orang mencarinya")
+    kop(fig, "Jakarta pusatnya, tapi\nYogyakarta ikut menyala", "Di mana orang mencarinya")
     ax = fig.add_axes([0.030, 0.415, 0.950, 0.385])
     ax.set_facecolor(LATAR)
     tambal, warna = [], []
@@ -288,7 +288,7 @@ def slide5(prov):
     fig.text(KIRI, 0.268,
              "Indeks provinsi mengukur porsi pencarian di wilayah itu, jadi\n"
              "jumlah penduduk sudah ikut diperhitungkan. Yogyakarta (18)\n"
-             "berada di atas Jawa Tengah dan Jawa Timur yang sama-sama 14 —\n"
+             "berada di atas Jawa Tengah dan Jawa Timur yang sama-sama 14,\n"
              "padahal penduduknya jauh lebih sedikit.",
              color=TINTA, fontsize=16.5, va="top", linespacing=1.6)
     kaki(fig, f"Sumber: Google Trends Indonesia, sebaran per provinsi. Diakses {TANGGAL_DATA}.",
@@ -300,7 +300,7 @@ def slide5(prov):
 # -------------------------------------------------------------------- slide 6
 def slide6():
     fig = kanvas()
-    kop(fig, "Cara membacanya —\ndan batasnya", "Metode")
+    kop(fig, "Cara membacanya,\ndan batasnya", "Metode")
     butir = [
         ("Ini peta pencarian, bukan jajak pendapat.",
          "Data ini tidak bisa menjawab berapa banyak orang mendukung\natau menolak aksi. Ia hanya menunjukkan apa yang dicari."),
@@ -324,7 +324,7 @@ def slide6():
 
 
 # ---------------------------------------------------------- grafik polos
-# Versi tanpa judul, tanpa catatan kaki, latar transparan — untuk ditempel
+# Versi tanpa judul, tanpa catatan kaki, latar transparan, untuk ditempel
 # ke tata letak HTML. Angka dan sumbunya identik dengan versi slide.
 def polos_kanvas(w=9.0, h=6.4):
     fig = plt.figure(figsize=(w, h), facecolor="none")
@@ -340,10 +340,10 @@ def grafik3_polos(tgl, seri):
     ax.plot(x[:-1], y[:-1], color=AKSEN, lw=3.0, solid_capstyle="round", zorder=3)
     ax.plot(x[-2:], y[-2:], color=AKSEN, lw=3.0, ls=(0, (2, 2)), zorder=3)
     ax.scatter([x[-1]], [y[-1]], s=110, facecolor=LATAR, edgecolor=AKSEN, lw=3.0, zorder=4)
-    ax.annotate("24 Agu — naik 4,8×\ndalam satu hari", (x[tgl.index("2026-08-24")], y[tgl.index("2026-08-24")]),
+    ax.annotate("24 Agu: naik 4,8×\ndalam satu hari", (x[tgl.index("2026-08-24")], y[tgl.index("2026-08-24")]),
                 textcoords="offset points", xytext=(-14, 16), ha="right", va="bottom",
                 fontsize=15, color=TINTA, linespacing=1.4)
-    ax.annotate("26 Agu — hari berjalan,\ndata belum lengkap", (x[-1], y[-1]),
+    ax.annotate("26 Agu: hari berjalan,\ndata belum lengkap", (x[-1], y[-1]),
                 textcoords="offset points", xytext=(-16, -8), ha="right", va="top",
                 fontsize=15, color=ABU, linespacing=1.4)
     ax.set_ylim(0, 112)
