@@ -137,9 +137,9 @@ Kolom `konfirmasi` diisi `ganda` kalau kamu menemukannya di **dua media independ
 | 3 | Pernyataan DPR soal percepatan pembahasan RUU Perampasan Aset | Kompas.id memberitakan ini menjelang aksi |
 | 4 | Pernyataan Polda Metro Jaya soal pengamanan dan rekayasa lalu lintas | Bisnis.com, sekitar 24 Agustus |
 | 5 | Imbauan Satuan Siber Mabes TNI agar tidak terprovokasi | Kompas TV |
-| 6 | Rilis temuan peneliti **Monash University Indonesia** soal amplifikasi terkoordinasi | **Cari sumber pertamanya** — rilis kampus, makalah, atau utas penelitinya. Jangan berhenti di berita yang mengutip berita. Periode analisisnya 26 Juli–1 Agustus 2026; catat metodenya kalau disebutkan. |
+| 6 | Peristiwa apa pun antara 23–25 Agustus yang bisa menjelaskan lonjakan pencarian | Ini yang paling penting sekarang: data Trends menunjukkan lonjakan tajam 23→24 Agustus. Cari pemicunya — pernyataan pejabat, video viral, seruan yang menyebar. |
 
-Nomor 6 yang paling penting untuk slide 8. Kalau kamu hanya menemukan berita sekunder, tetap boleh dikutip — tapi tulis di slide "sebagaimana diberitakan [media]", bukan "menurut penelitian".
+Nomor 6 yang paling penting sekarang, karena datanya sudah menunjuk ke sana. Kalau pemicunya tidak ketemu, slide 3 tetap jalan — anotasinya cukup menandai lonjakannya tanpa mengarang sebabnya.
 
 ---
 

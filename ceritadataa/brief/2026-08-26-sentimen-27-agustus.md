@@ -30,9 +30,8 @@ Diverifikasi dari pemberitaan 21–25 Agustus 2026. **Cek ulang sebelum tayang**
 - **DPR** kembali menjanjikan percepatan pembahasan RUU Perampasan Aset menjelang aksi.
 - **Polda Metro Jaya** menyiapkan pengamanan dan rekayasa lalu lintas situasional.
 - **Satuan Siber Mabes TNI** mengimbau masyarakat tidak mudah terprovokasi, terutama di media sosial.
-- Peneliti **Monash University Indonesia** menemukan dugaan pola amplifikasi terkoordinasi pada konten terkait demonstrasi, dari analisis percakapan di X, Instagram, TikTok, YouTube, dan Facebook periode **26 Juli – 1 Agustus 2026**.
 
-Temuan Monash itu adalah kail terbaik untuk slide terakhir: ada pertanyaan terbuka tentang seberapa organik keramaian ini, dan kamu bisa menguji indikasinya sendiri dengan data yang bisa kamu ambil.
+Yang membuat konteks ini layak diceritakan: tuntutan yang dibawa tidak tunggal, dan sebagiannya justru saling berlawanan. Itu jarang tertangkap dengan benar di pemberitaan sehari.
 
 ## 3. Lima pertanyaan riset
 
@@ -54,7 +53,6 @@ Jalankan `../scripts/ambil_data_27agustus.py`. Semua sumber di bawah gratis; han
 | **Reddit** (`.json`) | Utas dan komentar di r/indonesia | Korpus pembanding, diskusi lebih panjang |
 | **Wikipedia pageviews** | Kunjungan harian artikel terkait | Proxy perhatian publik yang bersih |
 | **TikTok** | Pencatatan manual: jumlah video dan tayangan per tagar, dengan waktu tepat + tangkapan layar | Potret satu waktu — **bukan** deret waktu |
-| **Monash University Indonesia** | Temuan amplifikasi terkoordinasi 26 Juli – 1 Agustus | Data sekunder, dikutip dengan atribusi penuh |
 
 **X/Twitter tidak diambil.** API-nya berbayar dan pengikisan melanggar ketentuan. Ini justru harus ditulis di slide keterbatasan: X kemungkinan besar adalah kanal paling ramai untuk isu ini, dan ketidakhadirannya adalah lubang terbesar dalam analisis ini. Mengakui itu jauh lebih kuat daripada menyembunyikannya.
 
@@ -113,7 +111,7 @@ Kalimat yang dipakai di slide: *"Pola ini konsisten dengan amplifikasi terkoordi
 | 5 | **Isu apa yang dibawa.** Enam kategori isu berdasarkan frekuensi | Batang horizontal, dua warna aksen |
 | 6 | **Nada percakapan.** Empat kelas, per kanal | Batang bertumpuk 100% |
 | 7 | **Di mana orang mencarinya.** Peta provinsi dari sebaran minat Google Trends | Peta koroplet — tanda tangan visualmu |
-| 8 | **Cara baca, keterbatasan, sumber.** Termasuk: X tidak tercakup; medsos bukan opini publik; unit analisis komentar bukan orang; temuan Monash sebagai pembanding | Teks, hierarki rapi |
+| 8 | **Cara baca, keterbatasan, sumber.** Termasuk: X tidak tercakup; medsos bukan opini publik; indeks Trends bukan jumlah orang; unit analisis komentar bukan orang | Teks, hierarki rapi |
 
 Slide 7 sengaja diletakkan menjelang akhir: peta adalah yang paling mungkin membuat orang berhenti menggeser, dan ia memperkenalkan kekuatan utama akun sejak unggahan pertama.
 
@@ -156,8 +154,7 @@ Metode lengkap dan keterbatasannya aku bahas Minggu nanti di #MingguDapur.
 
 Sumber: YouTube Data API v3, GDELT DOC 2.0, Reddit, Google Trends,
 Wikipedia Pageviews — diakses 25 Agustus 2026. Konteks aksi dari
-pemberitaan Kompas, Kontan, Tirto, Bisnis, 21–25 Agustus 2026. Temuan
-amplifikasi terkoordinasi: peneliti Monash University Indonesia.
+pemberitaan Kompas, Kontan, Tirto, Bisnis, 21–25 Agustus 2026.
 
 Buat kamu: dari lima isu di slide 5, mana yang paling jarang kamu lihat
 dibahas di beranda kamu?
