@@ -1,0 +1,1000 @@
+<title>ceritadataa</title>
+<meta name="description" content="Buku merek untuk akun media sosial ceritadataa.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{
+  color-scheme: light;
+  --tinta:#10161F; --sorot:#FFC93C;
+  --kertas:#EBEEEE; --papan:#F7F9F8; --papan-2:#E3E8E7;
+  --teks:#10161F; --teks-2:#3E4C50; --kabut:#5D6B6E;
+  --garis:#D2D8D8; --garis-kuat:#BFC8C8;
+  --nadi:#2C5FD1;
+  --s1:#2C5FD1; --s2:#C9352E; --s3:#0E8A72; --s4:#B07500; --s5:#8A4FD1; --s6:#C05A8F;
+  --redam:#B9C2C2;
+  --baik:#1F7A4D; --genting:#B3241C;
+  --tampil:'Plus Jakarta Sans','Segoe UI',system-ui,sans-serif;
+  --teksf:'Newsreader',Georgia,'Times New Roman',serif;
+  --data:'IBM Plex Mono',ui-monospace,SFMono-Regular,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme: dark;
+    --kertas:#10161F; --papan:#161F2A; --papan-2:#1D2733;
+    --teks:#E9EDEC; --teks-2:#B4C0C3; --kabut:#8FA0A6;
+    --garis:#232E38; --garis-kuat:#33404D;
+    --nadi:#4C82E8;
+    --s1:#4C82E8; --s2:#E05A50; --s3:#12A17F; --s4:#BC8613; --s5:#9E7CE6; --s6:#C25585;
+    --redam:#3B4753;
+    --baik:#3FA36F; --genting:#E0685F;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme: dark;
+  --kertas:#10161F; --papan:#161F2A; --papan-2:#1D2733;
+  --teks:#E9EDEC; --teks-2:#B4C0C3; --kabut:#8FA0A6;
+  --garis:#232E38; --garis-kuat:#33404D;
+  --nadi:#4C82E8;
+  --s1:#4C82E8; --s2:#E05A50; --s3:#12A17F; --s4:#BC8613; --s5:#9E7CE6; --s6:#C25585;
+  --redam:#3B4753;
+  --baik:#3FA36F; --genting:#E0685F;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--kertas); color:var(--teks);
+  font-family:var(--teksf); font-size:17px; line-height:1.62;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1180px;margin-inline:auto;padding-inline:clamp(18px,5vw,56px)}
+.kolom{max-width:66ch}
+h1,h2,h3,h4{font-family:var(--tampil);text-wrap:balance;margin:0;line-height:1.12;letter-spacing:-.02em}
+h2{font-size:clamp(1.75rem,3.4vw,2.35rem);font-weight:800}
+h3{font-size:1.18rem;font-weight:700;letter-spacing:-.01em;line-height:1.3}
+h4{font-size:.95rem;font-weight:600;letter-spacing:-.005em}
+p{margin:0}
+a{color:var(--nadi);text-underline-offset:3px}
+:focus-visible{outline:2px solid var(--nadi);outline-offset:3px;border-radius:2px}
+.eyebrow{font-family:var(--data);font-size:.7rem;font-weight:500;letter-spacing:.16em;text-transform:uppercase;color:var(--kabut)}
+.sorot{background:var(--sorot);color:#10161F;padding:.04em .22em;border-radius:2px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.mono{font-family:var(--data);font-size:.83rem;letter-spacing:-.01em}
+.tampil{font-family:var(--tampil)}
+.kabut{color:var(--kabut)}
+.kecil{font-size:.9rem;line-height:1.55}
+.tumpuk{display:flex;flex-direction:column;gap:18px}
+.tumpuk-rapat{display:flex;flex-direction:column;gap:10px}
+.tumpuk-lebar{display:flex;flex-direction:column;gap:34px}
+section{border-top:1px solid var(--garis);padding-block:clamp(52px,8vw,96px)}
+.kepala-bab{display:flex;flex-direction:column;gap:14px;max-width:70ch}
+.kepala-bab .nomor{font-family:var(--data);font-size:.7rem;letter-spacing:.18em;color:var(--kabut)}
+.kepala-bab .intro{font-size:1.06rem;color:var(--teks-2);max-width:62ch}
+.panel{background:var(--papan);border:1px solid var(--garis);border-radius:4px;padding:clamp(18px,2.6vw,28px)}
+.panel-tinta{background:var(--tinta);color:#E9EDEC;border-color:var(--tinta)}
+.panel-tinta .kabut,.panel-tinta .eyebrow{color:#8FA0A6}
+.kisi{--kisi-garis:color-mix(in srgb, var(--teks) 12%, transparent);background-image:linear-gradient(var(--kisi-garis) 1px,transparent 1px),linear-gradient(90deg,var(--kisi-garis) 1px,transparent 1px);background-size:32px 32px;background-position:-1px -1px}
+.kisi-terang{--kisi-garis:rgba(255,255,255,.08)}
+.kartu-kisi{display:grid;gap:14px}
+.k2{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.k3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.k4{grid-template-columns:repeat(auto-fit,minmax(168px,1fr))}
+ul,ol{margin:0;padding-left:1.15em}
+li{margin-block:.32em}
+li::marker{color:var(--kabut)}
+ul.tanpa{list-style:none;padding-left:0}
+.tabel-bungkus{overflow-x:auto;border:1px solid var(--garis);border-radius:4px;background:var(--papan)}
+table{border-collapse:collapse;width:100%;font-size:.9rem;font-family:var(--tampil);min-width:520px}
+th{font-family:var(--data);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--kabut);text-align:left;font-weight:500;padding:12px 14px;border-bottom:1px solid var(--garis-kuat);vertical-align:bottom}
+td{padding:12px 14px;border-bottom:1px solid var(--garis);vertical-align:top;line-height:1.48}
+tr:last-child td{border-bottom:0}
+td.num{font-family:var(--data);font-variant-numeric:tabular-nums;white-space:nowrap}
+.pasangan{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.ya,.tidak{border:1px solid var(--garis);border-radius:4px;padding:16px;background:var(--papan);font-size:.92rem}
+.ya .tag,.tidak .tag{font-family:var(--data);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;display:block;margin-bottom:8px}
+.ya .tag{color:var(--baik)} .tidak .tag{color:var(--genting)}
+@media (prefers-reduced-motion:no-preference){
+  .muncul{animation:naik .7s cubic-bezier(.2,.7,.3,1) both}
+  @keyframes naik{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+}
+</style>
+
+<header class="panel-tinta muncul" style="background:var(--tinta);color:#E9EDEC;padding-block:clamp(40px,7vw,72px);border-bottom:1px solid var(--tinta)">
+  <div class="wrap tumpuk-lebar">
+    <div class="tumpuk">
+      <span class="eyebrow" style="color:#8FA0A6">Buku merek &middot; versi 1.0 &middot; Agustus 2026</span>
+      <div style="display:flex;align-items:center;gap:clamp(14px,2.5vw,24px);flex-wrap:wrap">
+        <svg viewBox="0 0 64 64" width="72" height="72" aria-hidden="true" style="flex:none">
+          <path fill="#EBEEEE" d="M19 7H45A13 13 0 0 1 58 20V36A13 13 0 0 1 45 49H28L17 59.5L23 49H19A13 13 0 0 1 6 36V20A13 13 0 0 1 19 7Z"/>
+          <rect x="14" y="29" width="8" height="11" rx="4" fill="#10161F"/>
+          <rect x="28" y="21" width="8" height="19" rx="4" fill="#10161F"/>
+          <rect x="42" y="13" width="8" height="27" rx="4" fill="#FFC93C"/>
+        </svg>
+        <h1 style="font-size:clamp(2.6rem,7.4vw,4.6rem);letter-spacing:-.045em;color:#F7F9F8"><span style="font-weight:400">cerita</span><span style="font-weight:800">dataa</span></h1>
+      </div>
+    </div>
+    <p style="font-family:var(--tampil);font-size:clamp(1.15rem,2.4vw,1.5rem);font-weight:500;line-height:1.35;max-width:34ch;letter-spacing:-.015em">Data Indonesia, <span class="sorot">dibaca dari dekat.</span></p>
+    <div class="kartu-kisi k4" style="border-top:1px solid #232E38;padding-top:22px">
+      <div class="tumpuk-rapat"><span class="eyebrow" style="color:#8FA0A6">Kategori</span><span class="mono" style="color:#E9EDEC">Media edukasi data</span></div>
+      <div class="tumpuk-rapat"><span class="eyebrow" style="color:#8FA0A6">Kanal utama</span><span class="mono" style="color:#E9EDEC">Instagram &rarr; TikTok, LinkedIn</span></div>
+      <div class="tumpuk-rapat"><span class="eyebrow" style="color:#8FA0A6">Bahasa</span><span class="mono" style="color:#E9EDEC">Indonesia</span></div>
+      <div class="tumpuk-rapat"><span class="eyebrow" style="color:#8FA0A6">Status</span><span class="mono" style="color:#E9EDEC">Pra-peluncuran</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="wrap" style="padding-block:26px" aria-label="Daftar isi">
+  <ol class="mono" style="list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:8px 20px;font-size:.78rem">
+    <li><a href="#ringkasan" style="text-decoration:none"><span class="kabut">00</span> &nbsp;Ringkasan keputusan</a></li>
+    <li><a href="#fondasi" style="text-decoration:none"><span class="kabut">01</span> &nbsp;Fondasi merek</a></li>
+    <li><a href="#verbal" style="text-decoration:none"><span class="kabut">02</span> &nbsp;Identitas verbal</a></li>
+    <li><a href="#visual" style="text-decoration:none"><span class="kabut">03</span> &nbsp;Identitas visual</a></li>
+    <li><a href="#viz" style="text-decoration:none"><span class="kabut">04</span> &nbsp;Standar grafik</a></li>
+    <li><a href="#konten" style="text-decoration:none"><span class="kabut">05</span> &nbsp;Konten &amp; kanal</a></li>
+    <li><a href="#peluncuran" style="text-decoration:none"><span class="kabut">06</span> &nbsp;Peluncuran 90 hari</a></li>
+    <li><a href="#ukuran" style="text-decoration:none"><span class="kabut">07</span> &nbsp;Ukuran keberhasilan</a></li>
+    <li><a href="#etika" style="text-decoration:none"><span class="kabut">08</span> &nbsp;Etika data</a></li>
+    <li><a href="#aset" style="text-decoration:none"><span class="kabut">09</span> &nbsp;Berkas aset</a></li>
+  </ol>
+</nav>
+
+<main>
+<section id="ringkasan">
+  <div class="wrap tumpuk-lebar">
+    <div class="kepala-bab">
+      <span class="nomor">00 &mdash; Ringkasan</span>
+      <h2>Lima keputusan yang mengunci merek ini</h2>
+      <p class="intro">Sisa dokumen ini hanya menjabarkan kelimanya. Kalau suatu hari ada pilihan desain atau konten yang membingungkan, kembali ke halaman ini.</p>
+    </div>
+
+    <ol class="kartu-kisi k2" style="list-style:none;padding:0;counter-reset:k">
+      <li class="panel tumpuk-rapat"><span class="eyebrow">Keputusan 01 &mdash; Wilayah</span><h3>Indonesia dari unit terkecil</h3><p class="kecil">Bukan angka nasional yang sudah beredar di mana-mana. Kabupaten, kecamatan, desa, RT. Skala itulah yang tidak dikerjakan orang lain, dan justru paling terasa buat pembaca.</p></li>
+      <li class="panel tumpuk-rapat"><span class="eyebrow">Keputusan 02 &mdash; Peran</span><h3>Analis yang bercerita, bukan redaksi yang memberitakan</h3><p class="kecil">Suara orang pertama: &ldquo;aku olah&rdquo;, &ldquo;aku cek&rdquo;, &ldquo;aku salah&rdquo;. Merek ini melekat pada seseorang yang benar-benar mengerjakan datanya, bukan pada meja redaksi anonim.</p></li>
+      <li class="panel tumpuk-rapat"><span class="eyebrow">Keputusan 03 &mdash; Bukti</span><h3>Setiap unggahan membawa sumber</h3><p class="kecil">Nama data, tahun, tanggal akses, dan cara mengolah. Tanpa itu, unggahan tidak tayang. Ini pembeda paling murah untuk dijaga dan paling mahal untuk ditiru.</p></li>
+      <li class="panel tumpuk-rapat"><span class="eyebrow">Keputusan 04 &mdash; Bentuk</span><h3>Satu grafik, satu kalimat kesimpulan</h3><p class="kecil">Satu seri disorot, sisanya diredam abu. Aturan editorial ini sekaligus jadi perangkat visual merek &mdash; lihat &sect;04.</p></li>
+      <li class="panel tumpuk-rapat" style="grid-column:1/-1"><span class="eyebrow">Keputusan 05 &mdash; Ukuran</span><h3>Sukses = disimpan dan dikirim, bukan disukai</h3><p class="kecil">Metrik utama adalah simpanan dan kiriman per 1.000 tayangan. Suka dan pengikut dipantau, tapi tidak pernah jadi alasan mengubah keputusan 01&ndash;04.</p></li>
+    </ol>
+
+    <div class="panel kolom tumpuk-rapat" style="border-left:3px solid var(--sorot)">
+      <span class="eyebrow">Catatan asumsi</span>
+      <p class="kecil">Strategi ini disusun dari isi repositori <span class="mono">portfolio-data</span>: pemilik akun adalah analis data dan geospasial yang mengerjakan basis data spasial Dusun Krajan (Lumajang), <em>Spatial Base System Indonesia</em>, <em>Indonesia Mobility Flow Explorer</em>, dan sistem peringatan dini Tempursari &mdash; dengan sumber BPS, BMKG, dan MAGMA/PVMBG serta protokol etika data mengacu UU PDP 27/2022. Kalau asumsi itu keliru, yang perlu ditinjau ulang adalah &sect;01 dan &sect;05; &sect;02&ndash;&sect;04 tetap berlaku.</p>
+    </div>
+  </div>
+</section>
+
+<section id="fondasi">
+  <div class="wrap tumpuk-lebar">
+    <div class="kepala-bab">
+      <span class="nomor">01 &mdash; Fondasi</span>
+      <h2>Kenapa akun ini perlu ada</h2>
+      <p class="intro">Indonesia bukan kekurangan data. BPS, BMKG, Kemendagri, dan Satu Data Indonesia menerbitkan ribuan tabel tiap tahun. Masalahnya, data itu berhenti di PDF setebal 300 halaman, dan yang sampai ke lini masa cuma dua bentuk: angka nasional tanpa konteks, atau infografis cantik tanpa sumber.</p>
+    </div>
+
+    <div class="panel kolom tumpuk" style="background:var(--papan-2)">
+      <span class="eyebrow">Pernyataan posisi</span>
+      <p style="font-size:1.12rem;line-height:1.55">Untuk orang Indonesia yang butuh angka tentang tempatnya sendiri &mdash; mahasiswa, perencana, jurnalis, pegiat komunitas &mdash; <strong class="tampil">ceritadataa</strong> adalah akun yang menjelaskan statistik dan peta Indonesia sampai ke unit terkecil, dengan sumber dan metode yang dibuka. Berbeda dari portal media data yang mengejar kecepatan dan akun infografis yang mengejar estetika, ceritadataa mengejar satu hal: <span class="sorot">kamu bisa mengecek ulang, dan kamu bisa memakainya.</span></p>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Tiga janji</h3>
+      <div class="kartu-kisi k3">
+        <div class="panel tumpuk-rapat"><span class="mono kabut">01</span><h4>Selalu ada sumbernya</h4><p class="kecil">Nama dataset, tahun, tanggal akses. Kalau angkanya hasil olahan sendiri, dibilang begitu.</p></div>
+        <div class="panel tumpuk-rapat"><span class="mono kabut">02</span><h4>Selalu turun ke bawah</h4><p class="kecil">Angka nasional cuma pintu masuk. Isi ceritanya ada di kabupaten, kecamatan, desa.</p></div>
+        <div class="panel tumpuk-rapat"><span class="mono kabut">03</span><h4>Selalu ada &ldquo;jadi kenapa&rdquo;</h4><p class="kecil">Tiap unggahan ditutup dengan satu kalimat: ini penting buat siapa, dan buat apa.</p></div>
+      </div>
+    </div>
+
+    <div class="kartu-kisi k2">
+      <div class="tumpuk">
+        <h3>Arketipe</h3>
+        <p class="kecil"><strong class="tampil">Sang Cendekia (60%)</strong> &mdash; otoritasnya datang dari ketelitian, bukan dari nada tinggi. <strong class="tampil">Sang Tetangga (40%)</strong> &mdash; menjelaskan tanpa merendahkan, memakai bahasa sehari-hari, mau mengakui kalau salah.</p>
+        <p class="kecil">Gabungannya: <strong class="tampil">juru cerita angka</strong>. Bukan guru yang menggurui, bukan influencer yang berteriak. Orang yang duduk di sebelahmu dan menunjuk grafik di layar.</p>
+      </div>
+      <div class="tumpuk">
+        <h3>Empat nilai &amp; perilakunya</h3>
+        <ul class="tanpa tumpuk-rapat kecil">
+          <li><strong class="tampil">Jujur pada data.</strong> Kalau datanya lemah, itu ikut diceritakan.</li>
+          <li><strong class="tampil">Turun ke bawah.</strong> Selalu cari unit terkecil yang tersedia.</li>
+          <li><strong class="tampil">Sabar menjelaskan.</strong> Satu istilah asing per unggahan, itu pun dijelaskan.</li>
+          <li><strong class="tampil">Terbuka metodenya.</strong> Kalau ditanya caranya, dijawab &mdash; bukan dirahasiakan.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Siapa yang kita ajak bicara</h3>
+      <div class="kartu-kisi k3">
+        <div class="panel tumpuk-rapat">
+          <span class="eyebrow">Utama &middot; 45%</span>
+          <h4>Rani, 21 &mdash; mahasiswa statistik</h4>
+          <p class="kecil">Mau masuk industri data tapi contoh yang dia lihat selalu dataset luar negeri. Butuh: kasus Indonesia yang nyata, plus cara mengerjakannya.</p>
+          <p class="kecil kabut">Umpan yang mempan: &ldquo;begini cara aku dapat datanya&rdquo;.</p>
+        </div>
+        <div class="panel tumpuk-rapat">
+          <span class="eyebrow">Kedua &middot; 35%</span>
+          <h4>Bagas, 29 &mdash; staf perencanaan</h4>
+          <p class="kecil">Kerja di pemda, LSM, atau tim riset. Butuh angka level kabupaten yang siap dipakai buat proposal dan rapat, hari itu juga.</p>
+          <p class="kecil kabut">Umpan yang mempan: angka wilayahnya sendiri muncul di grafik.</p>
+        </div>
+        <div class="panel tumpuk-rapat">
+          <span class="eyebrow">Ketiga &middot; 20%</span>
+          <h4>Dewi, 34 &mdash; jurnalis &amp; dosen</h4>
+          <p class="kecil">Butuh visual yang boleh dikutip dan sumber yang aman disebut. Dia yang membawa jangkauan akun ini keluar dari lingkaran data.</p>
+          <p class="kecil kabut">Umpan yang mempan: baris sumber yang rapi dan bisa diverifikasi.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Lanskap dan celah yang kita ambil</h3>
+      <p class="kecil kabut kolom">Dipetakan per jenis pemain, bukan per nama akun &mdash; posisi tiap akun berubah cepat. Sebelum peluncuran, cocokkan tiap baris dengan 3&ndash;5 akun nyata yang sedang aktif.</p>
+      <div class="tabel-bungkus">
+        <table>
+          <thead><tr><th>Jenis pemain</th><th>Kekuatannya</th><th>Celah yang kita ambil</th></tr></thead>
+          <tbody>
+            <tr><td>Portal media data</td><td>Cepat, redaksi besar, akses narasumber</td><td>Mereka berhenti di level nasional/provinsi dan mengejar isu harian. Kita masuk lebih dalam dan lebih lambat.</td></tr>
+            <tr><td>Akun infografis harian</td><td>Estetika rapi, volume tinggi, mudah dibagikan</td><td>Sumber sering tidak jelas dan angkanya daur ulang. Kita menjual keterlacakan.</td></tr>
+            <tr><td>Kreator tutorial alat</td><td>Praktis, langsung bisa ditiru</td><td>Fokus ke <em>tools</em>, bukan ke temuan. Kita mulai dari cerita, alat menyusul.</td></tr>
+            <tr><td>Akademisi &amp; peneliti</td><td>Kedalaman metode, kredibilitas</td><td>Bahasanya berat dan jarang dikemas untuk lini masa. Kita jadi penerjemahnya.</td></tr>
+            <tr><td>Lembaga resmi</td><td>Data primer, otoritas</td><td>Terbit sebagai rilis, bukan sebagai cerita. Kita bantu angkanya sampai ke orang.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="kartu-kisi k2">
+      <div class="tumpuk">
+        <h3>Tiga lensa tetap</h3>
+        <p class="kecil">Setiap ide konten harus lolos minimal satu lensa. Kalau tidak lolos satu pun, itu bukan konten kita.</p>
+        <ul class="tanpa tumpuk-rapat kecil">
+          <li><strong class="tampil">Ruang</strong> &mdash; di mana persisnya? (peta, wilayah, jarak)</li>
+          <li><strong class="tampil">Waktu</strong> &mdash; sejak kapan, dan berubah ke mana?</li>
+          <li><strong class="tampil">Rumah tangga</strong> &mdash; kena ke siapa, seberapa besar?</li>
+        </ul>
+      </div>
+      <div class="tumpuk">
+        <h3>Yang tidak kita kerjakan</h3>
+        <ul class="tumpuk-rapat kecil">
+          <li>Berita harian dan angka yang belum sempat dicek.</li>
+          <li>Politik elektoral, survei elektabilitas, dan hitung cepat.</li>
+          <li>Grafik dari tangkapan layar orang lain tanpa data mentahnya.</li>
+          <li>Pamer perkakas tanpa temuan di baliknya.</li>
+          <li>Data pribadi, atau agregat yang terlalu kecil sampai orangnya bisa ditebak.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="verbal">
+  <div class="wrap tumpuk-lebar">
+    <div class="kepala-bab">
+      <span class="nomor">02 &mdash; Identitas verbal</span>
+      <h2>Cara akun ini bicara</h2>
+      <p class="intro">Di media sosial, suara lebih sering dikenali daripada logo. Bagian ini yang paling menentukan apakah orang merasa sedang ngobrol dengan seseorang, atau sedang dibacakan siaran pers.</p>
+    </div>
+
+    <div class="kartu-kisi k2">
+      <div class="panel tumpuk">
+        <span class="eyebrow">Nama</span>
+        <h3>ceritadataa</h3>
+        <p class="kecil">Dibaca <span class="mono">cerita-data</span>. Huruf <em>a</em> ganda di ujung adalah sidik jari nama pengguna &mdash; jangan disembunyikan, jangan pula dijelaskan tiap kali. Perlakukan sebagai bagian dari nama.</p>
+        <ul class="tanpa tumpuk-rapat kecil" style="border-top:1px solid var(--garis);padding-top:12px">
+          <li><span class="mono" style="color:var(--baik)">BENAR</span> &nbsp;ceritadataa &mdash; satu kata, huruf kecil semua, di semua kanal.</li>
+          <li><span class="mono" style="color:var(--genting)">SALAH</span> &nbsp;Cerita Dataa &middot; CeritaData &middot; cerita_dataa &middot; CERITADATAA</li>
+        </ul>
+        <p class="kecil kabut">Pengecualian: di awal kalimat pun tetap huruf kecil. Kalau editor eksternal memaksa kapital, tulis ulang kalimatnya.</p>
+      </div>
+      <div class="panel tumpuk">
+        <span class="eyebrow">Sistem tagline</span>
+        <p style="font-family:var(--tampil);font-size:1.5rem;font-weight:800;letter-spacing:-.03em">Dibaca dari dekat.</p>
+        <p class="kecil">Tagline utama, dipakai menempel pada logo. Pendek, tidak menjanjikan apa-apa yang tidak bisa ditepati, dan langsung menunjuk pembeda kita: skala.</p>
+        <ul class="tanpa tumpuk-rapat kecil" style="border-top:1px solid var(--garis);padding-top:12px">
+          <li><span class="eyebrow">Deskriptor</span><br>Data Indonesia, dibaca dari dekat.</li>
+          <li><span class="eyebrow">Pendukung &mdash; untuk kampanye</span><br>&ldquo;Angkanya ada. Ceritanya yang belum.&rdquo;<br>&ldquo;Satu grafik, satu cerita.&rdquo;<br>&ldquo;Cek sendiri, sumbernya kubuka.&rdquo;</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Bio siap pakai</h3>
+      <div class="kartu-kisi k3">
+        <div class="panel tumpuk-rapat"><span class="eyebrow">Instagram &middot; 124 karakter</span><p class="mono" style="font-size:.82rem;line-height:1.6">Data Indonesia, dibaca dari dekat &#128205; Satu grafik satu cerita &middot; sumber &amp; metode selalu dibuka &middot; dari desa sampai nasional</p></div>
+        <div class="panel tumpuk-rapat"><span class="eyebrow">TikTok &middot; 94 karakter</span><p class="mono" style="font-size:.82rem;line-height:1.6">Data Indonesia, dibaca dari dekat. Satu grafik, satu cerita &mdash; sumber &amp; metode selalu dibuka.</p></div>
+        <div class="panel tumpuk-rapat"><span class="eyebrow">LinkedIn / X</span><p class="mono" style="font-size:.82rem;line-height:1.6">Analis data &amp; geospasial. Menjelaskan statistik dan peta Indonesia sampai unit terkecil &mdash; BPS, BMKG, data spasial. Metode terbuka.</p></div>
+      </div>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Nada suara</h3>
+      <div class="pasangan">
+        <div class="ya"><span class="tag">Kita bilang</span>&ldquo;Angka ini naik 12% dalam lima tahun. Yang bikin naik bukan kelahiran, tapi orang pindah masuk.&rdquo;</div>
+        <div class="tidak"><span class="tag">Kita tidak bilang</span>&ldquo;Data mengejutkan! Fakta yang tidak pernah kamu tahu tentang kotamu &#128557;&#128557;&#128557;&rdquo;</div>
+        <div class="ya"><span class="tag">Kita bilang</span>&ldquo;Aku belum yakin soal ini. Datanya cuma sampai 2023, jadi anggap ini gambaran kasar.&rdquo;</div>
+        <div class="tidak"><span class="tag">Kita tidak bilang</span>&ldquo;Terbukti secara ilmiah.&rdquo; &mdash; kecuali memang ada studi yang bisa ditunjuk.</div>
+        <div class="ya"><span class="tag">Kita bilang</span>&ldquo;Kalau kamu kerja di dinas perencanaan, angka ini yang biasanya dipakai buat menghitung kebutuhan sekolah.&rdquo;</div>
+        <div class="tidak"><span class="tag">Kita tidak bilang</span>&ldquo;Implikasi kebijakan dari temuan tersebut bersifat multidimensional.&rdquo;</div>
+      </div>
+      <div class="kartu-kisi k4" style="margin-top:4px">
+        <div class="panel tumpuk-rapat"><h4>Jelas</h4><p class="kecil kabut">Kalimat di bawah 20 kata. Satu ide per kalimat.</p></div>
+        <div class="panel tumpuk-rapat"><h4>Hangat</h4><p class="kecil kabut">Sapa &ldquo;kamu&rdquo;. Sebut diri &ldquo;aku&rdquo;. Tidak pernah &ldquo;kami tim&rdquo;.</p></div>
+        <div class="panel tumpuk-rapat"><h4>Teliti</h4><p class="kecil kabut">Angka selalu bersatuan, bertahun, bersumber.</p></div>
+        <div class="panel tumpuk-rapat"><h4>Rendah hati</h4><p class="kecil kabut">Batas data disebut duluan, bukan disembunyikan.</p></div>
+      </div>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Aturan menulis</h3>
+      <ol class="kecil kolom tumpuk-rapat">
+        <li>Satu unggahan, satu kesimpulan. Kalau ada dua, itu dua unggahan.</li>
+        <li>Angka besar selalu diberi pembanding manusiawi: &ldquo;6.695 kecamatan &mdash; kira-kira satu kecamatan untuk tiap 40 ribu orang&rdquo;.</li>
+        <li>Persentase selalu disertai angka mutlaknya, minimal sekali.</li>
+        <li>Maksimal satu istilah teknis per unggahan, dan istilah itu dijelaskan di tempat.</li>
+        <li>Jangan tulis &ldquo;menyebabkan&rdquo; kalau yang kamu punya cuma korelasi.</li>
+        <li>Tahun data selalu ditulis, meski terasa mengganggu ritme kalimat.</li>
+        <li>Kalau kamu sendiri harus membaca dua kali, tulis ulang.</li>
+      </ol>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Kamus padanan</h3>
+      <p class="kecil kabut kolom">Kiri untuk caption dan grafik. Kanan boleh muncul di slide metode atau balasan komentar, setelah padanan kirinya lebih dulu dipakai.</p>
+      <div class="tabel-bungkus">
+        <table>
+          <thead><tr><th>Pakai ini</th><th>Bukan ini</th><th>Catatan</th></tr></thead>
+          <tbody>
+            <tr><td>nilai tengah</td><td>median</td><td>Sebut &ldquo;median&rdquo; sekali di kurung kalau perlu.</td></tr>
+            <tr><td>angka nyeleneh</td><td>outlier / pencilan</td><td>Jelaskan kenapa nyeleneh, jangan cuma dilabeli.</td></tr>
+            <tr><td>berbarengan, belum tentu menyebabkan</td><td>berkorelasi</td><td>Aturan paling sering dilanggar akun data.</td></tr>
+            <tr><td>berbasis lokasi</td><td>spasial / geospasial</td><td>Istilah aslinya boleh masuk di slide metode.</td></tr>
+            <tr><td>contoh yang disurvei</td><td>sampel</td><td>Sebutkan jumlahnya sekalian.</td></tr>
+            <tr><td>perkiraan ke depan</td><td>proyeksi</td><td>Selalu sebut asumsinya.</td></tr>
+            <tr><td>data mentah dari lapangan</td><td>data primer</td><td>&mdash;</td></tr>
+            <tr><td>per 100 ribu penduduk</td><td>angka absolut antar-daerah</td><td>Wajib untuk membandingkan wilayah beda ukuran.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Enam rubrik tetap</h3>
+      <p class="kecil kabut kolom">Rubrik membuat akun terasa punya jadwal, dan membuat produksi jadi mengisi cetakan, bukan mulai dari nol tiap kali.</p>
+      <div class="tabel-bungkus">
+        <table>
+          <thead><tr><th>Rubrik</th><th>Isi</th><th>Format</th><th>Ritme</th><th>Tugasnya</th></tr></thead>
+          <tbody>
+            <tr><td><strong class="tampil">Satu Grafik Satu Cerita</strong></td><td>Satu temuan, dibedah 6&ndash;8 slide</td><td>Carousel 4:5</td><td class="num">Mingguan</td><td>Jangkauan</td></tr>
+            <tr><td><strong class="tampil">Dari Dekat</strong></td><td>Zoom ke satu kabupaten / kecamatan / desa</td><td>Carousel + peta</td><td class="num">2 minggu</td><td>Pembeda</td></tr>
+            <tr><td><strong class="tampil">Salah Baca</strong></td><td>Bedah grafik menyesatkan yang beredar</td><td>Carousel 4 slide</td><td class="num">Bulanan</td><td>Otoritas</td></tr>
+            <tr><td><strong class="tampil">Ruang Kerja</strong></td><td>Proses, alat, kegagalan, layar QGIS/Python</td><td>Reels 20&ndash;40 detik</td><td class="num">Mingguan</td><td>Kedekatan</td></tr>
+            <tr><td><strong class="tampil">Sumbernya Di Sini</strong></td><td>Cara mengambil data dari BPS, BMKG, geoportal</td><td>Carousel utilitas</td><td class="num">Bulanan</td><td>Simpanan</td></tr>
+            <tr><td><strong class="tampil">Tanya Data</strong></td><td>Menjawab pertanyaan pembaca</td><td>Story &amp; Reels</td><td class="num">Mingguan</td><td>Komunitas</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="kartu-kisi k2">
+      <div class="panel tumpuk">
+        <span class="eyebrow">Cetakan caption</span>
+        <ol class="kecil tumpuk-rapat">
+          <li><strong class="tampil">Kait</strong> &mdash; satu baris, muat sebelum &ldquo;selengkapnya&rdquo;.</li>
+          <li><strong class="tampil">Konteks</strong> &mdash; dua kalimat: angkanya apa, dari mana.</li>
+          <li><strong class="tampil">Tiga poin</strong> &mdash; masing-masing satu baris.</li>
+          <li><strong class="tampil">Jadi kenapa</strong> &mdash; ini penting buat siapa.</li>
+          <li><strong class="tampil">Batasan</strong> &mdash; satu kalimat jujur soal kelemahan data.</li>
+          <li><strong class="tampil">Ajakan</strong> &mdash; satu, jangan dua.</li>
+          <li><strong class="tampil">Sumber</strong> &mdash; format baku, lihat &sect;04.</li>
+        </ol>
+      </div>
+      <div class="panel tumpuk-rapat">
+        <span class="eyebrow">Contoh terisi</span>
+        <p class="mono" style="font-size:.8rem;line-height:1.75">Peta desa yang kelihatan rapi itu, ternyata bolong.<br><br>Waktu aku rapikan batas 13 RT di Dusun Krajan, Lumajang, ada 3.443 m&sup2; wilayah yang diklaim dua RT sekaligus, dan 478 m&sup2; yang tidak masuk RT mana pun.<br><br>&rarr; Tumpang tindih itu bukan salah ketik, tapi warisan penggambaran manual.<br>&rarr; Celah kosong artinya ada rumah yang bisa lolos dari pendataan.<br>&rarr; Setelah perbaikan topologi: dua-duanya nol.<br><br>Jadi kenapa: selama batasnya bolong, semua hitungan di atasnya &mdash; jumlah warga, kebutuhan bantuan, cakupan layanan &mdash; ikut meleset.<br><br>Batasan: ini satu dusun. Jangan digeneralkan ke kabupaten sebelum diuji.<br><br>Simpan kalau kamu lagi pegang data batas wilayah.<br><br>Sumber: olahan sendiri atas batas RT Dusun Krajan (QGIS/GDAL, 2026) &middot; Diolah ceritadataa</p>
+      </div>
+    </div>
+
+    <div class="kartu-kisi k2">
+      <div class="tumpuk">
+        <h3>Bank kalimat pembuka</h3>
+        <ol class="kecil tumpuk-rapat">
+          <li>&ldquo;Angka ini kelihatan biasa saja &mdash; sampai dipecah per kecamatan.&rdquo;</li>
+          <li>&ldquo;Aku kira grafiknya bakal naik. Ternyata tidak.&rdquo;</li>
+          <li>&ldquo;Ada satu daerah yang bikin rata-rata nasional jadi menipu.&rdquo;</li>
+          <li>&ldquo;Data ini gratis dan terbuka. Cuma memang disimpan di tempat yang susah dicari.&rdquo;</li>
+          <li>&ldquo;Grafik ini beredar minggu lalu. Sumbunya bermasalah.&rdquo;</li>
+          <li>&ldquo;Kalau kamu tinggal di kabupaten ini, angkanya beda jauh dari yang di berita.&rdquo;</li>
+          <li>&ldquo;Butuh tiga jam buat merapikan data ini. Hasilnya satu kalimat.&rdquo;</li>
+          <li>&ldquo;Aku salah di unggahan kemarin. Ini ralatnya.&rdquo;</li>
+          <li>&ldquo;Peta ini benar secara teknis, tapi menyesatkan secara visual.&rdquo;</li>
+          <li>&ldquo;Pertanyaannya bukan berapa, tapi dibandingkan dengan apa.&rdquo;</li>
+        </ol>
+      </div>
+      <div class="tumpuk">
+        <h3>Penutup &amp; ajakan</h3>
+        <p class="kecil">Satu ajakan per unggahan, dirotasi supaya tidak terdengar seperti robot:</p>
+        <ul class="tanpa tumpuk-rapat kecil">
+          <li>&ldquo;Simpan, nanti kepakai.&rdquo;</li>
+          <li>&ldquo;Sumber &amp; metode ada di slide terakhir.&rdquo;</li>
+          <li>&ldquo;Kirim ke orang yang lagi ngurus data ini.&rdquo;</li>
+          <li>&ldquo;Mau aku bedah daerah kamu? Tulis di komentar.&rdquo;</li>
+        </ul>
+        <div class="panel tumpuk-rapat" style="border-left:3px solid var(--sorot)">
+          <span class="eyebrow">Kebijakan ralat</span>
+          <p class="kecil">Salah angka bukan aib &mdash; menutupinya iya. Dalam 24 jam: sematkan komentar &ldquo;<strong class="tampil">Ralat:</strong> &hellip;&rdquo;, unggah story ralat, dan tandai slide yang keliru. Unggahan lama tidak dihapus, ditambahi keterangan. Rubrik <em>Salah Baca</em> hanya kredibel kalau kita memberlakukannya ke diri sendiri.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="mark" viewBox="0 0 64 64">
+    <path fill="var(--logo-badan,#10161F)" d="M19 7H45A13 13 0 0 1 58 20V36A13 13 0 0 1 45 49H28L17 59.5L23 49H19A13 13 0 0 1 6 36V20A13 13 0 0 1 19 7Z"/>
+    <rect x="14" y="29" width="8" height="11" rx="4" fill="var(--logo-batang,#EBEEEE)"/>
+    <rect x="28" y="21" width="8" height="19" rx="4" fill="var(--logo-batang,#EBEEEE)"/>
+    <rect x="42" y="13" width="8" height="27" rx="4" fill="var(--logo-aksen,#FFC93C)"/>
+  </symbol>
+</svg>
+
+<style>
+.mark{display:block;--logo-badan:var(--teks);--logo-batang:var(--kertas);--logo-aksen:#FFC93C}
+.wordmark{font-family:var(--tampil);letter-spacing:-.045em;line-height:1;color:var(--teks)}
+.wordmark b{font-weight:800} .wordmark span{font-weight:400}
+.spesimen{display:flex;align-items:center;justify-content:center;min-height:190px;border:1px solid var(--garis);border-radius:4px;background-color:var(--papan);padding:24px}
+.swatch{border:1px solid var(--garis);border-radius:4px;overflow:hidden;background:var(--papan)}
+.swatch .chip{height:78px}
+.swatch .isi{padding:12px 14px;display:flex;flex-direction:column;gap:3px}
+.post{width:100%;max-width:302px;aspect-ratio:4/5;border:1px solid var(--garis-kuat);border-radius:4px;overflow:hidden;display:flex;flex-direction:column;background-color:var(--papan);font-family:var(--tampil)}
+.post .isi{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.post .kaki{padding:10px 20px;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;align-items:center;font-family:var(--data);font-size:.55rem;letter-spacing:.06em}
+.batang-baris{display:grid;grid-template-columns:82px 1fr 44px;gap:8px;align-items:center;font-size:.6rem}
+.batang{height:11px;border-radius:4px;background:var(--redam)}
+.sampul{aspect-ratio:1;border-radius:50%;background:var(--tinta);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;color:#E9EDEC;padding:10px;text-align:center}
+</style>
+
+<section id="visual">
+  <div class="wrap tumpuk-lebar">
+    <div class="kepala-bab">
+      <span class="nomor">03 &mdash; Identitas visual</span>
+      <h2>Logo, warna, huruf</h2>
+      <p class="intro">Semua keputusan visual di bawah ini turun dari satu perangkat: <span class="sorot">stabilo</span>. Tugas juru cerita data adalah menyorot satu angka yang penting dan meredam sisanya &mdash; jadi itu pula yang jadi bahasa rupa merek ini.</p>
+    </div>
+
+    <div class="kartu-kisi k2">
+      <div class="tumpuk">
+        <h3>Logo</h3>
+        <p class="kecil">Balon percakapan berisi tiga batang. Balon = <em>cerita</em>. Batang = <em>data</em>. Batang tertinggi berwarna kuning stabilo &mdash; itu <span class="sorot">satu angka yang disorot</span>, aturan editorial &sect;04 yang dijadikan bentuk.</p>
+        <p class="kecil">Ekor balon menunjuk ke kiri bawah, tempat mata membaca berhenti. Bentuknya sederhana supaya masih terbaca di lingkaran foto profil ukuran 32 piksel di lini masa.</p>
+      </div>
+      <div class="spesimen"><svg class="mark" width="120" height="120" style="--logo-badan:#10161F;--logo-batang:#EBEEEE"><use href="#mark"/></svg></div>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Kunci penggunaan</h3>
+      <div class="kartu-kisi k2">
+        <div class="spesimen" style="gap:18px">
+          <svg class="mark" width="60" height="60" style="--logo-badan:#10161F;--logo-batang:#EBEEEE;flex:none"><use href="#mark"/></svg>
+          <div><div class="wordmark" style="font-size:1.9rem;color:#10161F"><span>cerita</span><b>dataa</b></div><div class="mono" style="font-size:.6rem;letter-spacing:.18em;color:#5D6B6E;margin-top:6px">DIBACA DARI DEKAT</div></div>
+        </div>
+        <div class="spesimen" style="flex-direction:column;gap:14px;background:var(--tinta);border-color:var(--tinta)">
+          <svg class="mark" width="60" height="60" style="--logo-badan:#EBEEEE;--logo-batang:#10161F"><use href="#mark"/></svg>
+          <div style="text-align:center"><div class="wordmark" style="font-size:1.9rem;color:#F7F9F8"><span>cerita</span><b>dataa</b></div><div class="mono" style="font-size:.6rem;letter-spacing:.18em;color:#8FA0A6;margin-top:6px">DIBACA DARI DEKAT</div></div>
+        </div>
+      </div>
+      <p class="kecil kabut">Kunci mendatar untuk kop, sampul, dan spanduk. Kunci bertumpuk untuk foto profil besar, kaus, dan slide pembuka. Deskriptor boleh dilepas kalau tinggi logo di bawah 28 px.</p>
+    </div>
+
+    <div class="kartu-kisi k2">
+      <div class="tumpuk">
+        <h3>Konstruksi &amp; ruang aman</h3>
+        <p class="kecil">Satu satuan (<span class="mono">1u</span>) = lebar satu batang. Ruang kosong di sekeliling logo minimal <span class="mono">2u</span> di semua sisi &mdash; tidak boleh ada teks, garis, atau tepi gambar masuk ke dalamnya.</p>
+        <ul class="tanpa tumpuk-rapat kecil" style="border-top:1px solid var(--garis);padding-top:12px">
+          <li><span class="mono">Ukuran minimum</span> &mdash; lambang saja: 24&times;24 px layar / 8 mm cetak.</li>
+          <li><span class="mono">Kunci mendatar</span> &mdash; lebar minimum 132 px.</li>
+          <li><span class="mono">Di bawah 24 px</span> &mdash; pakai berkas <span class="mono">favicon.svg</span> (tiga batang tanpa balon).</li>
+        </ul>
+      </div>
+      <div class="spesimen kisi" style="min-height:230px"><svg class="mark" width="128" height="128" style="--logo-badan:#10161F;--logo-batang:#EBEEEE"><use href="#mark"/></svg></div>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Yang tidak boleh</h3>
+      <div class="kartu-kisi k3">
+        <div class="panel tumpuk-rapat"><span class="mono" style="color:var(--genting);font-size:.68rem">JANGAN 01</span><p class="kecil">Mengganti warna batang tertinggi. Kuning stabilo itu bagian dari makna, bukan hiasan.</p></div>
+        <div class="panel tumpuk-rapat"><span class="mono" style="color:var(--genting);font-size:.68rem">JANGAN 02</span><p class="kecil">Menaruh logo di atas foto ramai tanpa kotak polos di belakangnya.</p></div>
+        <div class="panel tumpuk-rapat"><span class="mono" style="color:var(--genting);font-size:.68rem">JANGAN 03</span><p class="kecil">Memiringkan, memutar, meregangkan, atau memberi bayangan dan gradasi.</p></div>
+        <div class="panel tumpuk-rapat"><span class="mono" style="color:var(--genting);font-size:.68rem">JANGAN 04</span><p class="kecil">Mengubah tinggi batang. Rasio 11&ndash;19&ndash;27 itu tetap.</p></div>
+        <div class="panel tumpuk-rapat"><span class="mono" style="color:var(--genting);font-size:.68rem">JANGAN 05</span><p class="kecil">Menulis ulang kata dengan huruf lain, atau menyamakan tebal &ldquo;cerita&rdquo; dan &ldquo;dataa&rdquo;.</p></div>
+        <div class="panel tumpuk-rapat"><span class="mono" style="color:var(--genting);font-size:.68rem">JANGAN 06</span><p class="kecil">Memakai kuning stabilo sebagai warna teks. Ia hanya boleh jadi latar.</p></div>
+      </div>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Warna</h3>
+      <p class="kecil kolom">Lima warna inti. Perbandingan pemakaian <span class="mono">60 : 30 : 10</span> &mdash; 60% kertas atau tinta sebagai latar, 30% teks dan garis, 10% kuning stabilo. Begitu kuningnya lebih dari 10%, ia berhenti berfungsi sebagai sorotan.</p>
+      <div class="kartu-kisi k3">
+        <div class="swatch"><div class="chip" style="background:#10161F"></div><div class="isi"><strong class="tampil">Tinta</strong><span class="mono kabut">#10161F</span><span class="kecil kabut">Teks utama, latar gelap, badan logo.</span></div></div>
+        <div class="swatch"><div class="chip" style="background:#EBEEEE;border-bottom:1px solid var(--garis)"></div><div class="isi"><strong class="tampil">Kertas</strong><span class="mono kabut">#EBEEEE</span><span class="kecil kabut">Latar terang. Abu kehijauan, bukan putih.</span></div></div>
+        <div class="swatch"><div class="chip" style="background:#FFC93C"></div><div class="isi"><strong class="tampil">Sorot</strong><span class="mono kabut">#FFC93C</span><span class="kecil kabut">Hanya sebagai latar sorotan. Tidak pernah jadi warna teks.</span></div></div>
+        <div class="swatch"><div class="chip" style="background:#2C5FD1"></div><div class="isi"><strong class="tampil">Nadi</strong><span class="mono kabut">#2C5FD1 &middot; gelap #4C82E8</span><span class="kecil kabut">Tautan, garis pembatas, seri data pertama.</span></div></div>
+        <div class="swatch"><div class="chip" style="background:#5D6B6E"></div><div class="isi"><strong class="tampil">Kabut</strong><span class="mono kabut">#5D6B6E &middot; gelap #8FA0A6</span><span class="kecil kabut">Teks sekunder, keterangan, baris sumber.</span></div></div>
+        <div class="swatch"><div class="chip" style="background:#B9C2C2"></div><div class="isi"><strong class="tampil">Redam</strong><span class="mono kabut">#B9C2C2 &middot; gelap #3B4753</span><span class="kecil kabut">Seri data yang sengaja tidak disorot.</span></div></div>
+      </div>
+      <div class="panel kolom tumpuk-rapat" style="border-left:3px solid var(--sorot)">
+        <span class="eyebrow">Aturan kuning</span>
+        <p class="kecil">Kuning stabilo di atas kertas terang memberi kontras teks di bawah ambang aman. Karena itu ia dipakai persis seperti stabilo asli: <span class="sorot">blok latar di belakang teks tinta</span>, bukan huruf berwarna kuning. Aturan ini juga berlaku di mode gelap &mdash; teks di atas blok kuning selalu tinta.</p>
+      </div>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Tipografi</h3>
+      <div class="kartu-kisi k3">
+        <div class="panel tumpuk-rapat">
+          <span class="eyebrow">Tampil</span>
+          <p style="font-family:var(--tampil);font-weight:800;font-size:2rem;letter-spacing:-.035em;line-height:1">Plus Jakarta Sans</p>
+          <p class="kecil kabut">Judul, angka besar, kata pada grafik. Dirancang studio huruf Indonesia (Tokotype) untuk identitas kota Jakarta &mdash; pilihan yang punya alasan, bukan cuma selera. Berat: 400 dan 800, lompat langsung tanpa berat tengah.</p>
+        </div>
+        <div class="panel tumpuk-rapat">
+          <span class="eyebrow">Teks</span>
+          <p style="font-family:var(--teksf);font-size:2rem;line-height:1.05">Newsreader</p>
+          <p class="kecil kabut">Paragraf panjang, caption bawaan, dokumen. Serif memberi kesan &ldquo;dibaca&rdquo; &mdash; setengah dari nama merek ini adalah <em>cerita</em>, dan serif yang membawanya.</p>
+        </div>
+        <div class="panel tumpuk-rapat">
+          <span class="eyebrow">Data</span>
+          <p style="font-family:var(--data);font-size:1.55rem;line-height:1.15">IBM Plex Mono</p>
+          <p class="kecil kabut">Label sumbu, satuan, tanggal akses, baris sumber, kode. Lebar tetap membuat angka berbaris rapi antar-slide.</p>
+        </div>
+      </div>
+      <div class="tabel-bungkus">
+        <table>
+          <thead><tr><th>Peran</th><th>Huruf</th><th>Ukuran unggahan 1080&times;1350</th><th>Ukuran layar</th></tr></thead>
+          <tbody>
+            <tr><td>Judul sampul</td><td>Plus Jakarta Sans 800</td><td class="num">96&ndash;120 px / spasi &minus;3%</td><td class="num">2.4&ndash;3.2 rem</td></tr>
+            <tr><td>Judul slide</td><td>Plus Jakarta Sans 800</td><td class="num">64 px</td><td class="num">1.6 rem</td></tr>
+            <tr><td>Kesimpulan grafik</td><td>Plus Jakarta Sans 500</td><td class="num">40 px</td><td class="num">1.1 rem</td></tr>
+            <tr><td>Teks isi</td><td>Newsreader 400</td><td class="num">36 px / tinggi baris 1.5</td><td class="num">1.0625 rem</td></tr>
+            <tr><td>Label &amp; sumbu</td><td>IBM Plex Mono 500</td><td class="num">24 px / spasi +8%</td><td class="num">.78 rem</td></tr>
+            <tr><td>Baris sumber</td><td>IBM Plex Mono 400</td><td class="num">20 px</td><td class="num">.72 rem</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="kecil kabut kolom">Tumpukan cadangan wajib ditulis di setiap berkas: <span class="mono">'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif</span> &mdash; kalau huruf gagal dimuat, hasilnya masih rapi, bukan Times.</p>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Tekstur: kisi lintang&ndash;bujur</h3>
+      <div class="kartu-kisi k2">
+        <div class="tumpuk">
+          <p class="kecil">Satu-satunya tekstur yang dipakai: kisi 32 px, garis 1 px, kekuatan 6&ndash;10%. Rujukannya <em>graticule</em> pada peta &mdash; nyambung dengan kerja geospasial pemilik akun, dan tidak akan tertukar dengan tekstur kertas daur ulang yang dipakai semua orang.</p>
+          <ul class="tanpa tumpuk-rapat kecil">
+            <li>Boleh: slide pembuka, slide metode, latar kutipan.</li>
+            <li>Tidak boleh: di belakang grafik &mdash; kisi grafik punya aturan sendiri (&sect;04).</li>
+            <li>Tidak pernah dua tekstur dalam satu unggahan.</li>
+          </ul>
+        </div>
+        <div class="spesimen kisi" style="min-height:170px"><span class="mono kabut">32 px &middot; 1 px &middot; 8%</span></div>
+      </div>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Anatomi unggahan &mdash; 1080 &times; 1350</h3>
+      <p class="kecil kolom">Empat zona tetap. Kaki halaman tidak pernah hilang, di slide mana pun, supaya tangkapan layar yang beredar tetap membawa nama dan sumbernya.</p>
+      <div class="kartu-kisi k2" style="align-items:start">
+        <div class="post kisi" style="background-color:var(--papan)">
+          <div class="isi" style="gap:0">
+            <div style="border:1px dashed var(--garis-kuat);padding:10px;flex:0 0 auto"><span class="mono kabut" style="font-size:.55rem">1 &middot; KAIT &mdash; maks 7 kata, 96&ndash;120 px</span></div>
+            <div style="border:1px dashed var(--garis-kuat);border-top:0;padding:10px;flex:1;display:flex;align-items:center"><span class="mono kabut" style="font-size:.55rem">2 &middot; GRAFIK &mdash; satu bentuk saja, margin 64 px</span></div>
+            <div style="border:1px dashed var(--garis-kuat);border-top:0;padding:10px;flex:0 0 auto"><span class="mono kabut" style="font-size:.55rem">3 &middot; KESIMPULAN &mdash; satu kalimat, 40 px</span></div>
+          </div>
+          <div class="kaki" style="border-top:1px solid var(--garis);color:var(--kabut)"><span>4 &middot; @ceritadataa</span><span>SUMBER &middot; HAL.</span></div>
+        </div>
+        <div class="tumpuk-rapat">
+          <div class="panel tumpuk-rapat"><h4>1 &middot; Kait</h4><p class="kecil kabut">Maksimal tujuh kata. Kalau tidak muat, idenya yang terlalu besar.</p></div>
+          <div class="panel tumpuk-rapat"><h4>2 &middot; Grafik</h4><p class="kecil kabut">Satu bentuk per slide. Margin luar 64 px, tidak pernah menyentuh tepi.</p></div>
+          <div class="panel tumpuk-rapat"><h4>3 &middot; Kesimpulan</h4><p class="kecil kabut">Kalimat lengkap, bukan label. Ini yang orang salin ke grup WhatsApp.</p></div>
+          <div class="panel tumpuk-rapat"><h4>4 &middot; Kaki</h4><p class="kecil kabut">Nama akun kiri, sumber pendek dan nomor halaman kanan. Tinggi tetap 88 px.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Tiga slide baku</h3>
+      <div class="kartu-kisi k3">
+
+        <div class="tumpuk-rapat">
+          <span class="eyebrow">Slide 1 &mdash; sampul</span>
+          <div class="post kisi kisi-terang" style="background-color:#10161F;border-color:#10161F">
+            <div class="isi" style="justify-content:space-between">
+              <svg class="mark" width="30" height="30" style="--logo-badan:#EBEEEE;--logo-batang:#10161F"><use href="#mark"/></svg>
+              <div style="display:flex;flex-direction:column;gap:9px">
+                <span style="font-family:var(--data);font-size:.55rem;letter-spacing:.16em;color:#8FA0A6">DARI DEKAT &middot; 01</span>
+                <span style="font-weight:800;font-size:1.32rem;line-height:1.12;letter-spacing:-.03em;color:#F7F9F8">Peta desa yang kelihatan rapi itu, <span class="sorot">ternyata bolong</span></span>
+                <span style="font-family:var(--teksf);font-size:.72rem;color:#B4C0C3;line-height:1.45">13 RT di Dusun Krajan, Lumajang &mdash; sebelum dan sesudah perbaikan topologi.</span>
+              </div>
+            </div>
+            <div class="kaki" style="color:#8FA0A6"><span>@CERITADATAA</span><span>1/7</span></div>
+          </div>
+        </div>
+
+        <div class="tumpuk-rapat">
+          <span class="eyebrow">Slide 4 &mdash; grafik</span>
+          <div class="post" style="background:#F7F9F8;border-color:var(--garis-kuat)">
+            <div class="isi" style="gap:14px">
+              <span style="font-weight:800;font-size:.95rem;line-height:1.15;letter-spacing:-.02em;color:#10161F">Luas wilayah bermasalah, per jenis</span>
+              <div style="display:flex;flex-direction:column;gap:9px">
+                <div class="batang-baris"><span style="color:#5D6B6E">Tumpang tindih</span><div class="batang" style="width:100%;background:#2C5FD1"></div><span style="font-family:var(--data);color:#10161F">3.443</span></div>
+                <div class="batang-baris"><span style="color:#5D6B6E">Celah kosong</span><div class="batang" style="width:14%"></div><span style="font-family:var(--data);color:#5D6B6E">478</span></div>
+                <div class="batang-baris"><span style="color:#5D6B6E">Sesudah</span><div class="batang" style="width:2%"></div><span style="font-family:var(--data);color:#5D6B6E">0</span></div>
+              </div>
+              <span style="font-family:var(--data);font-size:.5rem;color:#5D6B6E;letter-spacing:.04em">SATUAN: METER PERSEGI</span>
+              <span style="font-family:var(--tampil);font-weight:500;font-size:.72rem;line-height:1.35;color:#10161F;margin-top:auto">Wilayah yang diklaim dua RT sekaligus tujuh kali lebih luas daripada wilayah yang tidak diklaim siapa pun.</span>
+            </div>
+            <div class="kaki" style="border-top:1px solid var(--garis);color:#5D6B6E"><span>@CERITADATAA</span><span>4/7</span></div>
+          </div>
+        </div>
+
+        <div class="tumpuk-rapat">
+          <span class="eyebrow">Slide 7 &mdash; sumber</span>
+          <div class="post" style="background:#EBEEEE;border-color:var(--garis-kuat)">
+            <div class="isi" style="gap:12px">
+              <span style="font-family:var(--data);font-size:.55rem;letter-spacing:.16em;color:#5D6B6E">SUMBER &amp; METODE</span>
+              <span style="font-family:var(--data);font-size:.6rem;line-height:1.7;color:#10161F">Batas RT Dusun Krajan &mdash; olahan sendiri, 2026<br>Elevasi &amp; kemiringan &mdash; DEMNAS<br>Alat: QGIS, GDAL/OGR, SpatiaLite<br>Diakses: 12 Agu 2026</span>
+              <span style="font-family:var(--teksf);font-size:.68rem;line-height:1.5;color:#3E4C50;border-top:1px solid var(--garis);padding-top:10px">Batasan: satu dusun, bukan sampel kabupaten. Data pribadi warga tidak dipakai; semua angka bersifat agregat per RT.</span>
+              <span style="margin-top:auto;font-family:var(--tampil);font-weight:800;font-size:.82rem;color:#10161F">Simpan, <span class="sorot">nanti kepakai.</span></span>
+            </div>
+            <div class="kaki" style="border-top:1px solid var(--garis);color:#5D6B6E"><span>@CERITADATAA</span><span>7/7</span></div>
+          </div>
+        </div>
+
+      </div>
+      <p class="kecil kabut kolom">Angka pada contoh di atas diambil dari catatan kerja pemilik akun (perbaikan topologi 13 RT Dusun Krajan). Setiap templat baru wajib diisi angka nyata sejak tahap rancangan &mdash; jangan pernah memakai angka contoh yang lupa diganti.</p>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Sampul sorotan</h3>
+      <p class="kecil kolom">Enam sorotan tetap di profil, memakai lambang berukuran kecil dan label mono. Urutannya sengaja dimulai dari &ldquo;Mulai&nbsp;dari&nbsp;sini&rdquo; supaya pengunjung baru punya pintu masuk.</p>
+      <div class="kartu-kisi k4" style="gap:12px">
+        <div class="sampul"><svg class="mark" width="26" height="26" style="--logo-badan:#EBEEEE;--logo-batang:#10161F"><use href="#mark"/></svg><span class="mono" style="font-size:.56rem;letter-spacing:.1em">MULAI SINI</span></div>
+        <div class="sampul"><span style="font-family:var(--tampil);font-weight:800;font-size:1.1rem">01</span><span class="mono" style="font-size:.56rem;letter-spacing:.1em">DARI DEKAT</span></div>
+        <div class="sampul"><span style="font-family:var(--tampil);font-weight:800;font-size:1.1rem">02</span><span class="mono" style="font-size:.56rem;letter-spacing:.1em">SALAH BACA</span></div>
+        <div class="sampul"><span style="font-family:var(--tampil);font-weight:800;font-size:1.1rem">03</span><span class="mono" style="font-size:.56rem;letter-spacing:.1em">SUMBER</span></div>
+        <div class="sampul"><span style="font-family:var(--tampil);font-weight:800;font-size:1.1rem">04</span><span class="mono" style="font-size:.56rem;letter-spacing:.1em">RUANG KERJA</span></div>
+        <div class="sampul"><span style="font-family:var(--tampil);font-weight:800;font-size:1.1rem">05</span><span class="mono" style="font-size:.56rem;letter-spacing:.1em">RALAT</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<style>
+.grafik{border:1px solid var(--garis);border-radius:4px;background:var(--papan);padding:clamp(18px,2.6vw,26px);display:flex;flex-direction:column;gap:16px}
+.grafik .baris{display:grid;grid-template-columns:minmax(96px,150px) 1fr auto;gap:12px;align-items:center;font-size:.84rem;font-family:var(--tampil)}
+.grafik .jalur{height:16px;position:relative}
+.grafik .bar{height:16px;border-radius:4px;background:var(--redam)}
+.grafik .nilai{font-family:var(--data);font-variant-numeric:tabular-nums;font-size:.8rem;color:var(--kabut);min-width:46px;text-align:right}
+.grafik .sorotbar{background:var(--s1)}
+.grafik .nilai.kuat{color:var(--teks);font-weight:600}
+.pita{display:flex;border-radius:4px;overflow:hidden;border:1px solid var(--garis)}
+.pita span{flex:1;height:44px}
+</style>
+
+<section id="viz">
+  <div class="wrap tumpuk-lebar">
+    <div class="kepala-bab">
+      <span class="nomor">04 &mdash; Standar grafik</span>
+      <h2>Aturan visualisasi data</h2>
+      <p class="intro">Bagian ini yang membuat akun ini dipercaya. Bab lain boleh dinegosiasi seiring waktu; sepuluh aturan di bawah tidak &mdash; kecuali ada alasan teknis yang ditulis dan disimpan.</p>
+    </div>
+
+    <div class="kartu-kisi k2">
+      <ol class="tumpuk-rapat kecil">
+        <li><strong class="tampil">Satu grafik, satu kesimpulan.</strong> Kalau perlu dua kalimat untuk menjelaskannya, pecah jadi dua grafik.</li>
+        <li><strong class="tampil">Sorot satu, redam sisanya.</strong> Seri yang diceritakan berwarna; semua seri lain abu <span class="mono">Redam</span>. Ini perangkat merek sekaligus alat baca.</li>
+        <li><strong class="tampil">Batang selalu mulai dari nol.</strong> Tanpa pengecualian. Garis boleh dipotong, asal pemotongannya ditandai.</li>
+        <li><strong class="tampil">Tidak pernah dua sumbu Y.</strong> Dua satuan berbeda berarti dua grafik, atau indeks ke basis yang sama.</li>
+        <li><strong class="tampil">Label langsung, bukan legenda melulu.</strong> Sampai empat seri, tulis namanya menempel di garis atau batang.</li>
+        <li><strong class="tampil">Tidak ada angka di setiap titik.</strong> Beri angka hanya pada titik yang jadi bagian cerita.</li>
+      </ol>
+      <ol class="tumpuk-rapat kecil" start="7">
+        <li><strong class="tampil">Bandingkan yang sebanding.</strong> Antar-wilayah selalu per 100 ribu penduduk atau per luas, bukan angka mentah.</li>
+        <li><strong class="tampil">Peta pakai warna satu rona.</strong> Terang ke gelap untuk besaran; dua rona berlawanan hanya untuk data yang punya titik nol bermakna, dengan abu di tengah. Tidak pernah pelangi.</li>
+        <li><strong class="tampil">Kisi dan sumbu mundur ke belakang.</strong> Garis rambut tipis, teks abu. Data yang paling gelap di layar.</li>
+        <li><strong class="tampil">Baris sumber itu bagian dari grafik.</strong> Tidak ada grafik yang tayang tanpa baris sumber di kakinya.</li>
+      </ol>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Aturan sorot, dalam bentuk</h3>
+      <div class="kartu-kisi k2" style="align-items:start">
+        <div class="grafik">
+          <div class="tumpuk-rapat">
+            <span class="eyebrow">Contoh gaya &mdash; angka ilustrasi</span>
+            <h4 style="font-size:1.05rem;font-weight:800;letter-spacing:-.02em">Jarak rata-rata ke fasilitas kesehatan terdekat</h4>
+          </div>
+          <div class="tumpuk-rapat">
+            <div class="baris"><span>RT 07</span><div class="jalur"><div class="bar sorotbar" style="width:100%"></div></div><span class="nilai kuat">4,2 km</span></div>
+            <div class="baris"><span class="kabut">RT 11</span><div class="jalur"><div class="bar" style="width:57%"></div></div><span class="nilai">2,4 km</span></div>
+            <div class="baris"><span class="kabut">RT 03</span><div class="jalur"><div class="bar" style="width:45%"></div></div><span class="nilai">1,9 km</span></div>
+            <div class="baris"><span class="kabut">RT 09</span><div class="jalur"><div class="bar" style="width:31%"></div></div><span class="nilai">1,3 km</span></div>
+            <div class="baris"><span class="kabut">RT 02</span><div class="jalur"><div class="bar" style="width:19%"></div></div><span class="nilai">0,8 km</span></div>
+          </div>
+          <p style="font-family:var(--tampil);font-weight:500;font-size:.95rem;line-height:1.4;border-top:1px solid var(--garis);padding-top:14px">Satu RT harus menempuh jarak dua kali lipat tetangga terdekatnya.</p>
+          <p class="mono" style="font-size:.68rem;color:var(--kabut)">Sumber: angka ilustrasi &middot; Diolah ceritadataa</p>
+        </div>
+        <div class="tumpuk-rapat">
+          <div class="panel tumpuk-rapat"><h4>Yang dikerjakan aturan ini</h4><p class="kecil kabut">Mata pembaca punya satu tempat mendarat. Kesimpulan di bawah grafik tinggal membenarkan apa yang sudah terlihat.</p></div>
+          <div class="panel tumpuk-rapat"><h4>Warna mengikuti hal, bukan peringkat</h4><p class="kecil kabut">Kalau urutan berubah karena penyaringan, warna tiap wilayah tidak ikut berpindah. Satu wilayah = satu warna, selama satu rangkaian unggahan.</p></div>
+          <div class="panel tumpuk-rapat"><h4>Label langsung</h4><p class="kecil kabut">Nama dan angka menempel pada batangnya. Tidak ada kotak legenda yang memaksa mata bolak-balik.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Palet data</h3>
+      <p class="kecil kolom">Enam slot, dipakai berurutan &mdash; slot 4 baru dipakai kalau slot 1&ndash;3 sudah terpakai, dan seri ketujuh tidak pernah dibuat warna baru: gabungkan jadi &ldquo;Lainnya&rdquo; atau pecah jadi beberapa grafik kecil.</p>
+      <div class="kartu-kisi k2">
+        <div class="tumpuk-rapat">
+          <span class="eyebrow">Mode terang &mdash; permukaan #EBEEEE</span>
+          <div class="pita"><span style="background:#2C5FD1"></span><span style="background:#C9352E"></span><span style="background:#0E8A72"></span><span style="background:#B07500"></span><span style="background:#8A4FD1"></span><span style="background:#C05A8F"></span></div>
+          <p class="mono kabut" style="font-size:.68rem;line-height:1.7">1 #2C5FD1 &middot; 2 #C9352E &middot; 3 #0E8A72<br>4 #B07500 &middot; 5 #8A4FD1 &middot; 6 #C05A8F<br>redam #B9C2C2</p>
+        </div>
+        <div class="tumpuk-rapat">
+          <span class="eyebrow">Mode gelap &mdash; permukaan #10161F</span>
+          <div class="pita"><span style="background:#4C82E8"></span><span style="background:#E05A50"></span><span style="background:#12A17F"></span><span style="background:#BC8613"></span><span style="background:#9E7CE6"></span><span style="background:#C25585"></span></div>
+          <p class="mono kabut" style="font-size:.68rem;line-height:1.7">1 #4C82E8 &middot; 2 #E05A50 &middot; 3 #12A17F<br>4 #BC8613 &middot; 5 #9E7CE6 &middot; 6 #C25585<br>redam #3B4753</p>
+        </div>
+      </div>
+      <div class="panel kolom tumpuk-rapat" style="border-left:3px solid var(--sorot)">
+        <span class="eyebrow">Sudah diuji, bukan dikira-kira</span>
+        <p class="kecil">Kedua palet lolos seluruh pemeriksaan pada penguji palet: rentang terang, ambang kroma, jarak antar-warna untuk mata dengan buta warna merah&ndash;hijau dan biru&ndash;kuning, jarak untuk penglihatan normal, dan kontras terhadap permukaan. Mode gelap disusun ulang untuk latar gelap &mdash; <strong class="tampil">bukan hasil membalik palet terang</strong>. Kalau suatu hari ada warna yang diganti, uji ulang seluruh set, bukan warna itu saja.</p>
+      </div>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Baris sumber &mdash; format baku</h3>
+      <div class="panel tumpuk-rapat">
+        <p class="mono" style="font-size:.82rem;line-height:1.8">Sumber: <span class="kabut">[nama data]</span>, <span class="kabut">[penerbit]</span> <span class="kabut">[tahun data]</span> (diakses <span class="kabut">[tgl akses]</span>) &middot; Diolah ceritadataa</p>
+        <p class="mono kabut" style="font-size:.75rem;line-height:1.8;border-top:1px solid var(--garis);padding-top:10px">Sumber: Susenas 2024, BPS (diakses 12 Agu 2026) &middot; Diolah ceritadataa<br>Sumber: Katalog gempa, BMKG 2015&ndash;2026 (diakses 3 Agu 2026) &middot; Diolah ceritadataa<br>Sumber: DEMNAS, BIG (diakses 28 Jul 2026) &middot; Diolah ceritadataa</p>
+      </div>
+      <ul class="tanpa tumpuk-rapat kecil kolom">
+        <li>Kalau angkanya hasil hitungan sendiri, tulis &ldquo;olahan sendiri&rdquo; dan sebutkan alatnya.</li>
+        <li>Kalau data diambil dari studi orang lain, sebut penulis dan tahun terbitnya, bukan cuma nama lembaga.</li>
+        <li>Tanggal akses wajib &mdash; angka resmi sering direvisi diam-diam.</li>
+      </ul>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Kesalahan yang paling sering</h3>
+      <div class="pasangan">
+        <div class="ya"><span class="tag">Lakukan</span>Bandingkan antar-kabupaten dengan angka per 100 ribu penduduk.</div>
+        <div class="tidak"><span class="tag">Hindari</span>Membandingkan jumlah mentah antara kabupaten berpenduduk 3 juta dan 200 ribu.</div>
+        <div class="ya"><span class="tag">Lakukan</span>Peta besaran dengan satu rona, terang ke gelap, dan kelas yang disebutkan.</div>
+        <div class="tidak"><span class="tag">Hindari</span>Peta pelangi merah&ndash;kuning&ndash;hijau; matanya menebak, bukan membaca.</div>
+        <div class="ya"><span class="tag">Lakukan</span>Sebut &ldquo;naik berbarengan&rdquo; kalau yang kamu punya cuma dua garis yang seirama.</div>
+        <div class="tidak"><span class="tag">Hindari</span>Menulis &ldquo;menyebabkan&rdquo; karena dua garisnya kelihatan mirip.</div>
+        <div class="ya"><span class="tag">Lakukan</span>Potong sumbu waktu, dan tandai pemotongannya dengan jelas.</div>
+        <div class="tidak"><span class="tag">Hindari</span>Memulai sumbu batang dari angka selain nol supaya bedanya terlihat dramatis.</div>
+        <div class="ya"><span class="tag">Lakukan</span>Sediakan tabel angka di slide terakhir untuk grafik yang padat.</div>
+        <div class="tidak"><span class="tag">Hindari</span>Mengandalkan warna sendirian sebagai satu-satunya penanda identitas seri.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="konten">
+  <div class="wrap tumpuk-lebar">
+    <div class="kepala-bab">
+      <span class="nomor">05 &mdash; Konten &amp; kanal</span>
+      <h2>Apa yang diunggah, ke mana, seberapa sering</h2>
+      <p class="intro">Empat pilar, satu kanal utama, dan ritme yang bisa dijalankan sendirian sambil tetap bekerja. Rencana yang terlalu ambisius akan berhenti di minggu keenam &mdash; itu penyebab kematian akun data paling umum.</p>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Pilar konten</h3>
+      <div class="kartu-kisi k4">
+        <div class="panel tumpuk-rapat"><span class="mono" style="font-size:1.4rem;font-weight:600">40%</span><h4>Cerita</h4><p class="kecil kabut">Temuan dari data: <em>Satu Grafik Satu Cerita</em>, <em>Dari Dekat</em>. Ini alasan orang mengikuti.</p></div>
+        <div class="panel tumpuk-rapat"><span class="mono" style="font-size:1.4rem;font-weight:600">30%</span><h4>Cara</h4><p class="kecil kabut">Cara mengambil dan mengolah data: <em>Sumbernya Di Sini</em>. Ini yang paling banyak disimpan.</p></div>
+        <div class="panel tumpuk-rapat"><span class="mono" style="font-size:1.4rem;font-weight:600">20%</span><h4>Kritik</h4><p class="kecil kabut">Bedah grafik keliru: <em>Salah Baca</em>. Ini yang membangun otoritas paling cepat.</p></div>
+        <div class="panel tumpuk-rapat"><span class="mono" style="font-size:1.4rem;font-weight:600">10%</span><h4>Karakter</h4><p class="kecil kabut">Proses, kegagalan, ralat: <em>Ruang Kerja</em>. Ini yang membuat akun terasa manusia.</p></div>
+      </div>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Peran tiap kanal</h3>
+      <div class="tabel-bungkus">
+        <table>
+          <thead><tr><th>Kanal</th><th>Peran</th><th>Format</th><th>Frekuensi</th><th>Ukuran yang dipantau</th></tr></thead>
+          <tbody>
+            <tr><td><strong class="tampil">Instagram</strong></td><td>Rumah utama. Semua arsip ada di sini.</td><td>Carousel 4:5, Reels, Story</td><td class="num">3&times; / minggu</td><td>Simpanan &amp; kiriman</td></tr>
+            <tr><td><strong class="tampil">TikTok</strong></td><td>Pintu masuk orang baru.</td><td>Reels 20&ndash;45 detik, potongan <em>Ruang Kerja</em></td><td class="num">2&times; / minggu</td><td>Tayangan &amp; penonton tuntas</td></tr>
+            <tr><td><strong class="tampil">LinkedIn</strong></td><td>Pintu masuk kerja &amp; kolaborasi.</td><td>Satu grafik + 150 kata metode</td><td class="num">1&times; / minggu</td><td>Komentar dari praktisi</td></tr>
+            <tr><td><strong class="tampil">X / Threads</strong></td><td>Uji cepat mana ide yang nyangkut.</td><td>Grafik tunggal + satu kalimat</td><td class="num">3&ndash;4&times; / minggu</td><td>Kiriman ulang</td></tr>
+            <tr><td><strong class="tampil">Surat berkala</strong></td><td>Aset yang tidak bisa direbut algoritma. Mulai bulan ke-4.</td><td>Satu cerita panjang + tautan data</td><td class="num">2&times; / bulan</td><td>Jumlah pelanggan</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="kecil kabut kolom">Satu bahan mentah dipakai ulang di empat kanal &mdash; satu pekerjaan analisis, empat kemasan. Jangan pernah memproduksi bahan terpisah per kanal sebelum bulan keenam.</p>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Ritme mingguan</h3>
+      <div class="tabel-bungkus">
+        <table>
+          <thead><tr><th>Hari</th><th>Kegiatan</th><th>Waktu kerja</th></tr></thead>
+          <tbody>
+            <tr><td>Senin</td><td>Riset &amp; ambil data untuk cerita minggu ini</td><td class="num">2 jam</td></tr>
+            <tr><td>Selasa</td><td>Unggah carousel utama (Cerita) &middot; sebar potongan ke X</td><td class="num">1 jam</td></tr>
+            <tr><td>Rabu</td><td>Rekam &amp; unggah Reels <em>Ruang Kerja</em></td><td class="num">1 jam</td></tr>
+            <tr><td>Kamis</td><td>Unggah LinkedIn versi metode &middot; balas komentar terkumpul</td><td class="num">45 menit</td></tr>
+            <tr><td>Jumat</td><td>Unggah carousel utilitas (Cara) &middot; Story <em>Tanya Data</em></td><td class="num">1 jam</td></tr>
+            <tr><td>Sabtu</td><td>Rancang ulang bahan berikutnya, isi antrean ide</td><td class="num">2 jam</td></tr>
+            <tr><td>Minggu</td><td>Libur. Tidak ada unggahan terjadwal.</td><td class="num">&mdash;</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="kecil kabut kolom">Total sekitar 8 jam per minggu. Kalau minggu tertentu tidak sanggup, yang dipotong adalah Reels dan LinkedIn &mdash; carousel Selasa tidak pernah dilewat, karena keteraturan itu sendiri yang dibaca algoritma dan pembaca.</p>
+    </div>
+
+    <div class="tumpuk">
+      <h3>Dua belas ide pertama</h3>
+      <p class="kecil kabut kolom">Disusun dari bahan yang sudah ada di tangan &mdash; empat proyek yang sudah dikerjakan &mdash; supaya dua bulan pertama tidak dimulai dari nol. Setiap ide tetap wajib melewati verifikasi sumber sebelum diproduksi.</p>
+      <div class="tabel-bungkus">
+        <table>
+          <thead><tr><th>#</th><th>Ide</th><th>Rubrik</th><th>Bahan</th></tr></thead>
+          <tbody>
+            <tr><td class="num">01</td><td>Peta desa yang kelihatan rapi itu ternyata bolong &mdash; 3.443 m&sup2; tumpang tindih, 478 m&sup2; celah</td><td>Dari Dekat</td><td>Krajan</td></tr>
+            <tr><td class="num">02</td><td>Berapa jauh warga satu dusun harus jalan ke layanan dasar terdekat</td><td>Satu Grafik</td><td>Krajan</td></tr>
+            <tr><td class="num">03</td><td>Kenapa kemiringan lereng menentukan siapa yang dapat air duluan</td><td>Dari Dekat</td><td>DEMNAS</td></tr>
+            <tr><td class="num">04</td><td>Indonesia punya 6.695 kecamatan. Segini rupanya kalau digambar semua</td><td>Satu Grafik</td><td>Spatial Base</td></tr>
+            <tr><td class="num">05</td><td>Cara mengunduh batas administrasi resmi tanpa bayar &mdash; langkah demi langkah</td><td>Sumbernya Di Sini</td><td>Geoportal</td></tr>
+            <tr><td class="num">06</td><td>Perpindahan penduduk 1980&ndash;2024: yang pergi, yang pulang, yang tidak pernah balik</td><td>Satu Grafik</td><td>Mobility Flow</td></tr>
+            <tr><td class="num">07</td><td>&ldquo;Geometri tidak valid&rdquo; itu apa, dan kenapa 0 dari 6.695 itu berita bagus</td><td>Ruang Kerja</td><td>Spatial Base</td></tr>
+            <tr><td class="num">08</td><td>Sistem peringatan dini yang jalan tiap 5 menit &mdash; isi perutnya seperti apa</td><td>Ruang Kerja</td><td>Tempursari</td></tr>
+            <tr><td class="num">09</td><td>Berapa banyak gempa yang sebenarnya terjadi di sekitarmu tiap bulan</td><td>Satu Grafik</td><td>BMKG</td></tr>
+            <tr><td class="num">10</td><td>Peta pelangi: kenapa peta paling berwarna justru paling susah dibaca</td><td>Salah Baca</td><td>&mdash;</td></tr>
+            <tr><td class="num">11</td><td>Cara membaca tabel BPS tanpa tersesat di kode wilayah</td><td>Sumbernya Di Sini</td><td>BPS</td></tr>
+            <tr><td class="num">12</td><td>Tiga jam merapikan data, satu kalimat hasilnya &mdash; dan itu wajar</td><td>Ruang Kerja</td><td>&mdash;</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="kartu-kisi k2">
+      <div class="tumpuk">
+        <h3>Alur produksi</h3>
+        <ol class="kecil tumpuk-rapat">
+          <li>Pertanyaan dulu, bukan dataset dulu.</li>
+          <li>Cari data terkecil yang bisa menjawabnya.</li>
+          <li>Verifikasi: catat penerbit, tahun, tanggal akses.</li>
+          <li>Hitung, lalu cek ulang dengan cara berbeda.</li>
+          <li>Tulis kesimpulan satu kalimat &mdash; sebelum menggambar apa pun.</li>
+          <li>Baru rancang grafiknya.</li>
+          <li>Tulis caption, tayangkan, jaga kolom komentar 2 jam pertama.</li>
+        </ol>
+      </div>
+      <div class="tumpuk">
+        <h3>Cek sebelum tayang</h3>
+        <ul class="kecil tumpuk-rapat">
+          <li>Angka sudah dicek dua kali, dengan cara berbeda?</li>
+          <li>Baris sumber lengkap dengan tanggal akses?</li>
+          <li>Sumbu batang mulai dari nol?</li>
+          <li>Cuma satu seri yang berwarna?</li>
+          <li>Ada kesimpulan satu kalimat di slide grafik?</li>
+          <li>Batasan data disebut, minimal satu kalimat?</li>
+          <li>Kaki halaman muncul di semua slide?</li>
+          <li>Kalimat terpanjang di bawah 20 kata?</li>
+          <li>Tidak ada data pribadi atau agregat terlalu kecil?</li>
+          <li>Ada satu ajakan &mdash; tidak dua?</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="peluncuran">
+  <div class="wrap tumpuk-lebar">
+    <div class="kepala-bab">
+      <span class="nomor">06 &mdash; Peluncuran</span>
+      <h2>Sembilan puluh hari pertama</h2>
+      <p class="intro">Tujuannya bukan jumlah pengikut, tapi membuktikan bahwa ritmenya sanggup dijalankan dan formatnya nyangkut. Angka target di bawah sengaja dipatok rendah &mdash; kalau terlampaui, naikkan di kuartal berikutnya.</p>
+    </div>
+    <div class="kartu-kisi k4">
+      <div class="panel tumpuk-rapat"><span class="eyebrow">Hari &minus;14 &rarr; 0</span><h4>Siapkan gudang</h4><p class="kecil kabut">Kunci nama pengguna di semua kanal. Pasang foto profil, bio, enam sampul sorotan. Produksi enam carousel <em>sebelum</em> unggahan pertama &mdash; ini bantalan kalau minggu ketiga sibuk.</p></div>
+      <div class="panel tumpuk-rapat"><span class="eyebrow">Hari 1 &rarr; 30</span><h4>Buktikan format</h4><p class="kecil kabut">Unggahan pembuka: &ldquo;Aku bikin akun ini karena&hellip;&rdquo; &mdash; satu grafik, bukan foto diri. Jalankan 12 unggahan. Target: 3 unggahan dengan rasio simpanan di atas rata-rata akun.</p></div>
+      <div class="panel tumpuk-rapat"><span class="eyebrow">Hari 31 &rarr; 60</span><h4>Cari yang nyangkut</h4><p class="kecil kabut">Ulangi bentuk yang paling banyak disimpan, bukan yang paling banyak disukai. Mulai <em>Salah Baca</em> &mdash; rubrik ini yang biasanya membawa penonton dari luar lingkaran.</p></div>
+      <div class="panel tumpuk-rapat"><span class="eyebrow">Hari 61 &rarr; 90</span><h4>Buka pintu</h4><p class="kecil kabut">Kolaborasi dengan 2&ndash;3 akun bidang lain (kesehatan, pendidikan, iklim). Buka <em>Tanya Data</em> rutin. Siapkan halaman arsip di situs sendiri, sebagai tempat pulang data.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="ukuran">
+  <div class="wrap tumpuk-lebar">
+    <div class="kepala-bab">
+      <span class="nomor">07 &mdash; Ukuran keberhasilan</span>
+      <h2>Yang dihitung, dan yang diabaikan</h2>
+      <p class="intro">Akun data yang mengejar suka akan pelan-pelan berubah jadi akun kutipan motivasi. Metrik utama di bawah dipilih justru karena sulit dicurangi.</p>
+    </div>
+    <div class="panel panel-tinta kolom tumpuk-rapat">
+      <span class="eyebrow">Bintang utara</span>
+      <p style="font-family:var(--tampil);font-size:1.35rem;font-weight:800;letter-spacing:-.03em;color:#F7F9F8">Simpanan + kiriman per 1.000 tayangan</p>
+      <p class="kecil" style="color:#B4C0C3">Orang menyimpan karena berguna, dan mengirim karena percaya. Dua-duanya butuh usaha lebih besar daripada menekan tombol suka &mdash; itu sebabnya keduanya jadi ukuran yang jujur.</p>
+    </div>
+    <div class="tabel-bungkus">
+      <table>
+        <thead><tr><th>Ukuran</th><th>30 hari</th><th>60 hari</th><th>90 hari</th><th>Kenapa dipantau</th></tr></thead>
+        <tbody>
+          <tr><td>Simpanan + kiriman / 1.000 tayangan</td><td class="num">&ge; 25</td><td class="num">&ge; 35</td><td class="num">&ge; 45</td><td>Ukuran manfaat sesungguhnya</td></tr>
+          <tr><td>Unggahan terbit sesuai jadwal</td><td class="num">12</td><td class="num">24</td><td class="num">36</td><td>Keteraturan &gt; ledakan sesaat</td></tr>
+          <tr><td>Komentar berisi pertanyaan data</td><td class="num">&ge; 10</td><td class="num">&ge; 30</td><td class="num">&ge; 60</td><td>Tanda audiens yang benar</td></tr>
+          <tr><td>Permintaan &ldquo;bedah daerahku&rdquo;</td><td class="num">&ge; 3</td><td class="num">&ge; 10</td><td class="num">&ge; 25</td><td>Bukti posisi &ldquo;dari dekat&rdquo; nyangkut</td></tr>
+          <tr><td>Kutipan / tautan dari luar</td><td class="num">0</td><td class="num">&ge; 2</td><td class="num">&ge; 5</td><td>Otoritas mulai terbentuk</td></tr>
+          <tr><td>Pengikut</td><td class="num" style="color:var(--kabut)">dipantau, bukan target</td><td class="num" style="color:var(--kabut)">&mdash;</td><td class="num" style="color:var(--kabut)">&mdash;</td><td>Akibat, bukan tujuan</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="kartu-kisi k3">
+      <div class="panel tumpuk-rapat"><h4>Setelah 90 hari</h4><p class="kecil kabut">Kalau tiga ukuran teratas tercapai, jalur pendapatan bisa dibuka: kelas visualisasi data, jasa analisis untuk lembaga daerah, dan paket templat grafik.</p></div>
+      <div class="panel tumpuk-rapat"><h4>Kerja sama berbayar</h4><p class="kecil kabut">Hanya dengan pihak yang bersedia datanya dibuka. Tidak pernah mengunggah grafik yang tidak boleh dicek pembaca &mdash; sekali saja melanggar, seluruh &sect;01 runtuh.</p></div>
+      <div class="panel tumpuk-rapat"><h4>Tanda bahaya</h4><p class="kecil kabut">Kalau rasio simpanan turun sementara suka naik, biasanya kontennya mulai bergeser jadi hiburan. Kembali ke &sect;00.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="etika">
+  <div class="wrap tumpuk-lebar">
+    <div class="kepala-bab">
+      <span class="nomor">08 &mdash; Etika data</span>
+      <h2>Aturan yang tidak dinegosiasi</h2>
+      <p class="intro">Merek yang menjual keterlacakan hanya sekuat pelanggaran pertamanya. Tujuh butir ini diturunkan dari protokol etika data yang sudah dipakai di proyek Dusun Krajan, mengacu UU Perlindungan Data Pribadi No. 27 Tahun 2022.</p>
+    </div>
+    <ol class="kartu-kisi k2" style="list-style:none;padding:0">
+      <li class="panel tumpuk-rapat"><span class="mono kabut">01</span><p class="kecil">Tidak pernah mengunggah data yang bisa menunjuk orang tertentu. Kalau agregatnya terlalu kecil sampai orangnya bisa ditebak, naikkan tingkat agregasinya.</p></li>
+      <li class="panel tumpuk-rapat"><span class="mono kabut">02</span><p class="kecil">Titik koordinat rumah, sekolah anak, dan fasilitas rentan tidak ditampilkan pada resolusi penuh.</p></li>
+      <li class="panel tumpuk-rapat"><span class="mono kabut">03</span><p class="kecil">Sumber disebut apa adanya, termasuk kalau datanya lemah, kedaluwarsa, atau hasil perkiraan.</p></li>
+      <li class="panel tumpuk-rapat"><span class="mono kabut">04</span><p class="kecil">Tidak memilih potongan tahun atau wilayah hanya karena bentuk grafiknya lebih menarik.</p></li>
+      <li class="panel tumpuk-rapat"><span class="mono kabut">05</span><p class="kecil">Ralat dalam 24 jam, terbuka, tanpa menghapus jejak unggahan lama.</p></li>
+      <li class="panel tumpuk-rapat"><span class="mono kabut">06</span><p class="kecil">Tidak memakai data komunitas untuk kepentingan komersial tanpa izin komunitasnya.</p></li>
+      <li class="panel tumpuk-rapat" style="grid-column:1/-1"><span class="mono kabut">07</span><p class="kecil">Kalau ragu apakah sebuah unggahan bisa merugikan orang di dalam datanya &mdash; tunda, tanyakan, baru putuskan. Tidak ada tenggat yang lebih penting daripada ini.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="aset">
+  <div class="wrap tumpuk-lebar">
+    <div class="kepala-bab">
+      <span class="nomor">09 &mdash; Berkas</span>
+      <h2>Aset yang menyertai dokumen ini</h2>
+      <p class="intro">Semuanya ada di folder <span class="mono">branding/</span> pada repositori <span class="mono">portfolio-data</span>.</p>
+    </div>
+    <div class="tabel-bungkus">
+      <table>
+        <thead><tr><th>Berkas</th><th>Isi</th><th>Dipakai untuk</th></tr></thead>
+        <tbody>
+          <tr><td class="mono">logo/mark.svg</td><td>Lambang, versi latar terang</td><td>Umum</td></tr>
+          <tr><td class="mono">logo/mark-inverse.svg</td><td>Lambang, versi latar gelap</td><td>Slide tinta, sampul</td></tr>
+          <tr><td class="mono">logo/mark-mono.svg</td><td>Lambang satu warna, mengikuti warna teks</td><td>Cetak satu warna, sablon, favicon besar</td></tr>
+          <tr><td class="mono">logo/lockup-horizontal.svg</td><td>Lambang + nama + tagline, mendatar</td><td>Kop, spanduk, tanda tangan surel</td></tr>
+          <tr><td class="mono">logo/lockup-stacked.svg</td><td>Lambang + nama + tagline, bertumpuk</td><td>Slide pembuka, kaus, stiker</td></tr>
+          <tr><td class="mono">logo/avatar.svg</td><td>Foto profil 1000&times;1000</td><td>Semua kanal media sosial</td></tr>
+          <tr><td class="mono">logo/favicon.svg</td><td>Tiga batang tanpa balon, 32&times;32</td><td>Ukuran di bawah 24 px</td></tr>
+          <tr><td class="mono">tokens.css</td><td>Seluruh warna &amp; huruf sebagai variabel CSS</td><td>Situs, templat HTML, grafik</td></tr>
+          <tr><td class="mono">tokens.json</td><td>Nilai yang sama dalam JSON</td><td>Skrip Python/JS, templat grafik</td></tr>
+          <tr><td class="mono">brandbook.html</td><td>Dokumen ini</td><td>Rujukan</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="panel kolom tumpuk-rapat" style="border-left:3px solid var(--sorot)">
+      <span class="eyebrow">Sebelum dipakai produksi</span>
+      <p class="kecil">Dua berkas kunci (<span class="mono">lockup-*.svg</span>) masih memakai elemen teks hidup supaya mudah disunting. Sebelum dikirim ke percetakan atau pihak ketiga, ubah tulisannya jadi <em>outline</em> &mdash; kalau tidak, huruf akan berganti sendiri di komputer yang tidak punya Plus Jakarta Sans.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer style="border-top:1px solid var(--garis)">
+  <div class="wrap" style="padding-block:44px;display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between;align-items:flex-end">
+    <div style="display:flex;align-items:center;gap:14px">
+      <svg class="mark" width="34" height="34"><use href="#mark"/></svg>
+      <div><div class="wordmark" style="font-size:1.15rem"><span>cerita</span><b>dataa</b></div><span class="mono kabut" style="font-size:.68rem">Dibaca dari dekat</span></div>
+    </div>
+    <p class="mono kabut" style="font-size:.7rem;line-height:1.7;text-align:right">Buku merek v1.0 &middot; Agustus 2026<br>Tinjau ulang setelah 90 hari peluncuran</p>
+  </div>
+</footer>

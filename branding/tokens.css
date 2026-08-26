@@ -1,0 +1,47 @@
+/* ceritadataa — token identitas v1.0
+   Sumber kebenaran warna & tipografi. Jangan pakai hex mentah di luar berkas ini. */
+:root {
+  /* --- Warna inti --- */
+  --cd-tinta:        #10161F; /* ink  — teks utama, latar gelap, isi logo      */
+  --cd-kertas:       #EBEEEE; /* paper— latar terang                           */
+  --cd-kertas-putih: #F7F9F8; /* kartu di atas kertas                          */
+  --cd-sorot:        #FFC93C; /* highlighter — HANYA sebagai latar, bukan teks */
+  --cd-nadi:         #2C5FD1; /* aksen struktural terang (tautan, garis)       */
+  --cd-nadi-terang:  #4C82E8; /* aksen struktural untuk latar gelap            */
+  --cd-kabut:        #5D6B6E; /* teks sekunder di latar terang                 */
+  --cd-kabut-terang: #8FA0A6; /* teks sekunder di latar gelap                  */
+  --cd-garis:        #D2D8D8; /* garis rambut terang                           */
+  --cd-garis-gelap:  #232E38; /* garis rambut gelap                            */
+
+  /* --- Palet visualisasi data: mode terang (permukaan #EBEEEE) --- */
+  --cd-seri-1-l: #2C5FD1; /* biru    */
+  --cd-seri-2-l: #C9352E; /* merah   */
+  --cd-seri-3-l: #0E8A72; /* toska   */
+  --cd-seri-4-l: #B07500; /* amber   */
+  --cd-seri-5-l: #8A4FD1; /* ungu    */
+  --cd-seri-6-l: #C05A8F; /* magenta */
+  --cd-redam-l:  #B9C2C2; /* seri yang tidak disorot */
+
+  /* --- Palet visualisasi data: mode gelap (permukaan #10161F) --- */
+  --cd-seri-1-d: #4C82E8;
+  --cd-seri-2-d: #E05A50;
+  --cd-seri-3-d: #12A17F;
+  --cd-seri-4-d: #BC8613;
+  --cd-seri-5-d: #9E7CE6;
+  --cd-seri-6-d: #C25585;
+  --cd-redam-d:  #3B4753;
+
+  /* --- Status (tidak pernah dipakai sebagai seri) --- */
+  --cd-baik:     #1F7A4D;
+  --cd-waspada:  #A66A00;
+  --cd-genting:  #B3241C;
+
+  /* --- Tipografi --- */
+  --cd-font-tampil: 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+  --cd-font-teks:   'Newsreader', Georgia, 'Times New Roman', serif;
+  --cd-font-data:   'IBM Plex Mono', ui-monospace, 'SFMono-Regular', monospace;
+
+  /* --- Ritme --- */
+  --cd-radius: 4px;   /* sudut kartu & ujung batang grafik */
+  --cd-unit:   8px;   /* satuan spasi dasar */
+}

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 96" width="420" height="96" role="img" aria-label="ceritadataa — data Indonesia, dibaca dari dekat">
+  <title>ceritadataa — lockup horizontal</title>
+  <!-- PRODUKSI: konversi <text> menjadi outline (Path) sebelum dipakai di aset final. -->
+  <g transform="translate(8 12) scale(1.05)">
+    <path fill="#10161F" d="M19 7H45A13 13 0 0 1 58 20V36A13 13 0 0 1 45 49H28L17 59.5L23 49H19A13 13 0 0 1 6 36V20A13 13 0 0 1 19 7Z"/>
+    <rect x="14" y="29" width="8" height="11" rx="4" fill="#EBEEEE"/>
+    <rect x="28" y="21" width="8" height="19" rx="4" fill="#EBEEEE"/>
+    <rect x="42" y="13" width="8" height="27" rx="4" fill="#FFC93C"/>
+  </g>
+  <text x="86" y="52" font-family="'Plus Jakarta Sans','Segoe UI',sans-serif" font-size="34" letter-spacing="-1.1" fill="#10161F">
+    <tspan font-weight="400">cerita</tspan><tspan font-weight="800">dataa</tspan>
+  </text>
+  <text x="88" y="72" font-family="'IBM Plex Mono',ui-monospace,monospace" font-size="10.5" letter-spacing="1.6" fill="#5D6B6E">DIBACA DARI DEKAT</text>
+</svg>
