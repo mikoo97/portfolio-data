@@ -332,12 +332,105 @@ def slide6():
     plt.close(fig)
 
 
+# ---------------------------------------------------------- grafik polos
+# Versi tanpa judul, tanpa catatan kaki, latar transparan — untuk ditempel
+# ke tata letak HTML. Angka dan sumbunya identik dengan versi slide.
+def polos_kanvas(w=9.0, h=6.4):
+    fig = plt.figure(figsize=(w, h), facecolor="none")
+    return fig
+
+
+def grafik3_polos(tgl, seri):
+    y = seri["demo 27 agustus"]
+    fig = polos_kanvas(9.0, 6.0)
+    ax = fig.add_axes([0.085, 0.13, 0.895, 0.84])
+    ax.patch.set_alpha(0)
+    x = list(range(len(tgl)))
+    ax.plot(x[:-1], y[:-1], color=AKSEN, lw=3.0, solid_capstyle="round", zorder=3)
+    ax.plot(x[-2:], y[-2:], color=AKSEN, lw=3.0, ls=(0, (2, 2)), zorder=3)
+    ax.scatter([x[-1]], [y[-1]], s=110, facecolor=LATAR, edgecolor=AKSEN, lw=3.0, zorder=4)
+    ax.annotate("24 Agu — naik 4,8×\ndalam satu hari", (x[tgl.index("2026-08-24")], y[tgl.index("2026-08-24")]),
+                textcoords="offset points", xytext=(-14, 16), ha="right", va="bottom",
+                fontsize=15, color=TINTA, linespacing=1.4)
+    ax.annotate("26 Agu — hari berjalan,\ndata belum lengkap", (x[-1], y[-1]),
+                textcoords="offset points", xytext=(-16, -8), ha="right", va="top",
+                fontsize=15, color=ABU, linespacing=1.4)
+    ax.set_ylim(0, 112)
+    ax.set_yticks([0, 25, 50, 75, 100])
+    tik = [i for i, s in enumerate(tgl) if s.endswith(("-01", "-08", "-15", "-22", "-26")) or i == 0]
+    ax.set_xticks(tik)
+    ax.set_xticklabels(["26 Jul" if tgl[i] == "2026-07-26" else
+                        f"{int(tgl[i][8:])} {'Agu' if tgl[i][5:7]=='08' else 'Jul'}" for i in tik])
+    for s in ("top", "right"):
+        ax.spines[s].set_visible(False)
+    for s in ("left", "bottom"):
+        ax.spines[s].set_color(GARIS)
+    ax.tick_params(colors=ABU, labelsize=15, length=0, pad=9)
+    ax.grid(axis="y", color=GARIS, lw=1)
+    ax.set_axisbelow(True)
+    fig.savefig(GRAFIK / "grafik-3.png", dpi=120, transparent=True)
+    plt.close(fig)
+
+
+def grafik4_polos(seri):
+    puncak = {k: max(v for v in s if v is not None) for k, s in seri.items()}
+    urut = sorted(puncak.items(), key=lambda kv: kv[1])
+    nama = {"demo 27 agustus": "“demo 27 agustus”", "MBG": "“MBG”",
+            "RUU perampasan aset": "“RUU perampasan aset”",
+            "hukuman mati koruptor": "“hukuman mati koruptor”"}
+    fig = polos_kanvas(9.0, 5.2)
+    ax = fig.add_axes([0.315, 0.04, 0.60, 0.92])
+    ax.patch.set_alpha(0)
+    for i, (k, v) in enumerate(urut):
+        ax.barh(i, v, height=0.52, color=AKSEN if k == "demo 27 agustus" else REDAM, zorder=3)
+        ax.text(v + 1.8, i, "<1" if v == 0.5 else f"{v:.0f}", va="center", fontsize=19,
+                color=TINTA if k == "demo 27 agustus" else ABU,
+                weight=800 if k == "demo 27 agustus" else 400)
+    ax.set_yticks(range(len(urut)))
+    ax.set_yticklabels([nama[k] for k, _ in urut], fontsize=18, color=TINTA)
+    ax.set_xlim(0, 118)
+    ax.set_xticks([])
+    for s in ("top", "right", "bottom", "left"):
+        ax.spines[s].set_visible(False)
+    ax.tick_params(length=0, pad=12)
+    fig.savefig(GRAFIK / "grafik-4.png", dpi=120, transparent=True)
+    plt.close(fig)
+
+
+def grafik5_polos(prov):
+    geo = json.loads((MENTAH / "indonesia-prov.geojson").read_text(encoding="utf-8"))
+    nilai = {samakan(k): v for k, v in prov.items()}
+    fig = polos_kanvas(9.0, 5.0)
+    ax = fig.add_axes([0.0, 0.20, 1.0, 0.80])
+    ax.patch.set_alpha(0)
+    tambal, warna = [], []
+    for f in geo["features"]:
+        v = nilai.get(samakan(f["properties"]["Propinsi"]))
+        g = f["geometry"]
+        for poli in (g["coordinates"] if g["type"] == "MultiPolygon" else [g["coordinates"]]):
+            tambal.append(MplPolygon(poli[0], closed=True))
+            warna.append(warna_bin(v))
+    ax.add_collection(PatchCollection(tambal, facecolor=warna, edgecolor=LATAR, lw=0.5, zorder=2))
+    ax.set_xlim(94.5, 141.5); ax.set_ylim(-11.5, 7.0)
+    ax.set_aspect("equal"); ax.axis("off")
+    lg = fig.add_axes([0.0, 0.0, 1.0, 0.18]); lg.axis("off"); lg.patch.set_alpha(0)
+    for i, (c, l) in enumerate(zip(RAMPA, LABEL_BIN)):
+        lg.add_patch(Rectangle((0.02 + i * 0.165, 0.58), 0.042, 0.26, facecolor=c, edgecolor="none"))
+        lg.text(0.02 + i * 0.165, 0.42, l, color=ABU, fontsize=14, va="top")
+    lg.add_patch(Rectangle((0.02, 0.06), 0.042, 0.26, facecolor=KOSONG, edgecolor="none"))
+    lg.text(0.072, 0.30, "data tidak tersedia (Gorontalo, Sulawesi Barat)", color=ABU, fontsize=14, va="top")
+    lg.set_xlim(0, 1); lg.set_ylim(0, 1)
+    fig.savefig(GRAFIK / "grafik-5.png", dpi=120, transparent=True)
+    plt.close(fig)
+
+
 def main():
     tgl, seri = baca_harian()
     prov = baca_provinsi()
     slide1(seri); slide2(); slide3(tgl, seri); slide4(seri); slide5(prov); slide6()
+    grafik3_polos(tgl, seri); grafik4_polos(seri); grafik5_polos(prov)
     print(f"font: {KELUARGA}")
-    for p in sorted(GRAFIK.glob("slide-*.png")):
+    for p in sorted(GRAFIK.glob("*.png")):
         print(f"  {p.name}  {p.stat().st_size//1024} KB")
 
 

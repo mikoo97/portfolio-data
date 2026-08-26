@@ -29,8 +29,9 @@ tanpa kerangka kerja, tanpa JavaScript. Aku akan menangkap layar tiap section.
 SISTEM — SALIN PERSIS, JANGAN DIUBAH SATU NILAI PUN
 
   Kanvas    1080 × 1350 px
-  Margin    aman 90 px kiri-kanan, 120 px atas-bawah
-            jangan letakkan apa pun penting di 250 px paling bawah
+  Margin    padding 120 px atas-bawah, 90 px kiri-kanan
+            kaki slide adalah anak flex terakhir dengan margin-top: auto —
+            jangan pakai position: absolute untuk menempatkannya
 
   Warna     latar    #F4F1EA
             tinta    #16161A
@@ -39,6 +40,7 @@ SISTEM — SALIN PERSIS, JANGAN DIUBAH SATU NILAI PUN
             garis    #DED9CE
 
   Huruf     satu keluarga saja: Plus Jakarta Sans
+            angka besar 160 px / bobot 800 / tinggi baris 1 / warna aksen
             judul     44 px / bobot 800 / tinggi baris 1.2
             subjudul  24 px / bobot 400
             isi       20 px / bobot 400 / tinggi baris 1.6
@@ -49,7 +51,9 @@ SISTEM — SALIN PERSIS, JANGAN DIUBAH SATU NILAI PUN
   Perataan  semua teks rata kiri. tidak ada yang rata tengah.
 
 ASET TERLAMPIR
-  grafik-*.png — sudah final. Tempatkan apa adanya.
+  grafik-*.png — grafik polos berlatar transparan, tanpa judul dan tanpa
+    catatan kaki bawaan. Judul dan catatan kaki ditulis di HTML, bukan di
+    dalam gambar. Tempatkan gambarnya apa adanya.
   teks-slide.txt — teks persis tiap slide.
 
 ATURAN ISI
@@ -92,6 +96,8 @@ PEMERIKSAAN SEBELUM MENJAWAB
   [ ] setiap angka cocok persis dengan teks-slide.txt
   [ ] tidak ada kalimat yang tidak kutulis
   [ ] tiap section tepat 1080 × 1350 px
+  [ ] tidak ada judul atau catatan kaki yang muncul dua kali — sekali di HTML
+      dan sekali lagi di dalam gambar
   Kalau ada yang tidak tercentang, perbaiki dulu, jangan dikirim.
 ```
 
