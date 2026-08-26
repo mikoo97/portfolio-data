@@ -36,7 +36,7 @@ SISTEM — SALIN PERSIS, JANGAN DIUBAH SATU NILAI PUN
   Warna     latar    #F4F1EA
             tinta    #16161A
             abu      #8A8A85   (hanya untuk catatan kaki dan label sekunder)
-            aksen    [#7A3E9D]  (hanya SATU aksen; tidak ada warna kedua)
+            aksen    [#14615A]  (hanya SATU aksen; tidak ada warna kedua)
             garis    #DED9CE
 
   Huruf     satu keluarga saja: Plus Jakarta Sans

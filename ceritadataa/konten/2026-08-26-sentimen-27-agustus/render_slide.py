@@ -26,8 +26,8 @@ GRAFIK.mkdir(exist_ok=True)
 
 # ---------------------------------------------------------------- gaya tetap
 LATAR, TINTA, ABU = "#F4F1EA", "#16161A", "#8A8A85"
-AKSEN, REDAM, GARIS = "#7A3E9D", "#C9C5BC", "#DED9CE"
-RAMPA = ["#EDE6F3", "#D6C0E3", "#B78FCC", "#8E56AF", "#5F3080"]
+AKSEN, REDAM, GARIS = "#14615A", "#C9C5BC", "#DED9CE"
+RAMPA = ["#E2EDEA", "#B9D6D0", "#86B8AF", "#4C8E85", "#1E5E56"]
 AMBANG = [5, 10, 20, 40]
 LABEL_BIN = ["di bawah 5", "5–9", "10–19", "20–39", "40 ke atas"]
 KOSONG = "#DDD8CE"
@@ -76,9 +76,6 @@ def kanvas():
 
 def kop(fig, judul: str, kicker: str | None = None, y: float = ATAS):
     """Judul temuan di kepala slide. Judul menyatakan temuan, bukan 'Grafik 1'."""
-    if kicker:
-        fig.text(KIRI, y + 0.028, " ".join(kicker.upper()), color=ABU,
-                 fontsize=11, weight=600)
     fig.text(KIRI, y, judul, color=TINTA, fontsize=27, weight=800,
              va="top", ha="left", linespacing=1.28)
 
@@ -126,7 +123,7 @@ def samakan(nama: str) -> str:
 
 def warna_bin(v):
     if v is None:
-        return KOSONG
+        return RAMPA[0]
     for i, batas in enumerate(AMBANG):
         if v < batas:
             return RAMPA[i]
@@ -136,7 +133,6 @@ def warna_bin(v):
 # -------------------------------------------------------------------- slide 1
 def slide1(seri):
     fig = kanvas()
-    fig.text(KIRI, 0.90, "CERITADATAA · KAMIS 27 AGUSTUS", color=ABU, fontsize=12, weight=600)
     fig.text(KIRI, 0.845, "Aksinya baru besok.\nPercakapannya sudah\nlebih dulu berjalan.",
              color=TINTA, fontsize=40, weight=800, va="top", linespacing=1.2)
     rasio = seri["demo 27 agustus"][-1] / seri["RUU perampasan aset"][-1]
@@ -289,11 +285,6 @@ def slide5(prov):
         fig.add_artist(Rectangle((lx + i * 0.152, ly), 0.036, 0.017,
                                      transform=fig.transFigure, facecolor=c, edgecolor="none"))
         fig.text(lx + i * 0.152, ly - 0.016, l, color=ABU, fontsize=12.5, va="top")
-    fig.add_artist(Rectangle((lx, ly - 0.055), 0.036, 0.017, transform=fig.transFigure,
-                                 facecolor=KOSONG, edgecolor="none"))
-    fig.text(lx + 0.046, ly - 0.048, "data tidak tersedia (Gorontalo, Sulawesi Barat)",
-             color=ABU, fontsize=12.5, va="top")
-
     fig.text(KIRI, 0.268,
              "Indeks provinsi mengukur porsi pencarian di wilayah itu, jadi\n"
              "jumlah penduduk sudah ikut diperhitungkan. Yogyakarta (18)\n"
